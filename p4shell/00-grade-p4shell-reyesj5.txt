@@ -1,0 +1,3376 @@
+reyesj5 p4shell grade: 0/100 
+ 
+ 
+Grading revision: 118 
+
+$ make
+gcc -Wall -Werror -o myshell myshell.c
+
+$ grade.py
+You are in the right directory
+deleting > ...
+deleting  ...
+deleting @ ...
+deleting + ...
+deleting advancedRedirection_concat_rd_14 ...
+deleting + ...
+deleting advancedRedirection_concat_rd_14 ...
+deleting + ...
+deleting advancedRedirection_format_rd_3 ...
+deleting + ...
+deleting advancedRedirection_format_rd_4 ...
+deleting +advancedRedirection_format_rd_5 ...
+deleting +advancedRedirection_format_rd_6 ...
+deleting + ...
+deleting advancedRedirection_format_rd_7 ...
+deleting + ...
+deleting advancedRedirection_format_rd_8 ...
+deleting + ...
+deleting advancedRedirection_illegal_rd_9 ...
+deleting + ...
+deleting advancedRedirection_illegal_rd_9 ...
+Don't delete clean.sh
+deleting complexRedirection_format_rd_4 ...
+deleting complexRedirection_format_rd_8 ...
+deleting complexRedirection_illegal_rd_9 ...
+deleting gooduser_rd_rd_1 ...
+deleting gooduser_rd_rd_2 ...
+Don't delete grade.py
+deleting directory out ...
+Don't delete runOneTest.sh
+rm: cannot remove 'gooduser_rd_*': No such file or directory
+rm: cannot remove 'complexRedirection_*': No such file or directory
+rm: cannot remove 'advancedRedirection_*': No such file or directory
+----------------------------------
+Running batch file: gooduser_basic
+Diffing gooduser_basic.stdout
+2d1
+< An error has occurred
+5c4
+< /home/mwachs/.1718/cs154-aut-17-admin/distribution
+---
+> /
+
+
+Diffing gooduser_basic.stderr
+gooduser_basic      0	8
+----------------------------------
+Running batch file: gooduser_args
+Diffing gooduser_args.stdout
+3c3
+< /stage
+---
+> /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/src/mpi
+5,98c5,22
+< admin_share
+< advjava
+< analysa
+< android
+< android-bootcamp
+< baton
+< borjanfs
+< branchpredictor
+< ceres
+< cgi-cmsc
+< cgi-cmsc-cspp
+< cgi-cspp
+< cgi-general
+< chinese_corpora
+< classes
+< cmsc121
+< cmsc122
+< cmsc122-share
+< cmsc15100
+< cmsc-16100
+< cmsc-16200
+< cmsc-22311
+< cmsc226
+< cmsc23000
+< cmsc237
+< cmsc23710
+< cmsc25030
+< cmsc-27100
+< cmsc-28000
+< cmsc33710
+< courseinfo
+< cs161
+< csil_downtime
+< cspp50101
+< cspp51023
+< cspp51036
+< cspp51044
+< cspp53001
+< cspp56410
+< csppdb
+< cspp_share
+< csq
+< csrg
+< cvs
+< db
+< diderot
+< docs
+< dph
+< epurdy
+< fenics
+< fretanalysis
+< gideond_data
+< git
+< hopper
+< imogulta
+< irina
+< java
+< jeffreyc
+< jinkies
+< jinwang_data
+< lssg
+< manticore
+< mesh
+< moby
+< mobycfa
+< museum
+< nethack
+< nnkp
+< pc2
+< phdnotes
+< player
+< plt
+< rfc
+< risigroup
+< scratch
+< sitoc
+< siweiw
+< sml
+< smlbasis
+< soundbox
+< southsidecivic.net
+< svn
+< swift-coasters
+< techstaff
+< theory
+< theorycenter
+< toc
+< turnersr_data
+< ucare
+< vhosts
+< vision
+< w3serv
+< web_static
+< y-lab
+---
+> attr
+> coll
+> comm
+> datatype
+> debugger
+> errhan
+> group
+> info
+> init
+> io
+> Makefile.mk
+> misc
+> pt2pt
+> rma
+> romio
+> spawn
+> timer
+> topo
+100,194c24,42
+< total 184
+< drwxrws---   3 nitayack   admin             112 Feb  2  2012 admin_share
+< drwxr-xr-x   3 gerber     www-data           25 Sep 19  2016 advjava
+< drwxr-x---   8 root       other            4096 Jan  7  2005 analysa
+< drwxr-xr-x   3 root       root               43 May 29  2013 android
+< drwxr-xr-x   3 gerber     root               17 Apr  3  2013 android-bootcamp
+< drwxrwxr-x   5 amr        baton             100 Jul 10  2007 baton
+< drwxr-xr-x   4 borja      student          4096 Mar  2  2012 borjanfs
+< drwxrwsr-x   4 bboven     branchpredictor    47 Jan 27  2006 branchpredictor
+< drwxrwsr-x   3 aachien    systems-faculty  4096 Mar 10  2017 ceres
+< drwxr-xr-x 588 root       root            16384 May 26  2015 cgi-cmsc
+< lrwxrwxrwx   1 root       root                8 May 18  2015 cgi-cmsc-cspp -> cgi-cspp
+< lrwxrwxrwx   1 root       root                8 May 19  2015 cgi-cspp -> cgi-cmsc
+< drwxr-xr-x 486 root       root            12288 Jan 14  2015 cgi-general
+< drwxrwsr-x   5 gkobele    chinese-corpora    90 Oct 22  2013 chinese_corpora
+< drwxr-xr-x   8 root       other            4096 Sep 25 10:24 classes
+< drwxr-xr-x   3 rdb        root               60 Sep 28  2014 cmsc121
+< drwxr-xr-x   3 rdb        root               90 Jan  7  2015 cmsc122
+< drwxrwsr-x   3 amr        12100-01           26 Mar  9  2015 cmsc122-share
+< drwxrws---   4 jhr        15100-00           42 Sep 27  2010 cmsc15100
+< drwxrwxr-x   4 stuart     stuart             40 Sep 19  2014 cmsc-16100
+< drwxr-xr-x   5 root       root               67 Nov 19  2014 cmsc-16200
+< drwxr-xr-x   4 root       root               40 Dec  5  2014 cmsc-22311
+< drwxrwsr-x   4 jhr        cs226              67 Dec  9  2005 cmsc226
+< drwxrwsr-x   7 jhr        23000-01           88 Jan 24  2006 cmsc23000
+< drwxrwsr-x  10 jhr        23700-00          141 Oct 17  2005 cmsc237
+< drwxrwxrwt   5 root       root               57 Jun 23  2009 cmsc23710
+< drwxrwsr-x   3 morgan     25030-01           26 Apr 27  2009 cmsc25030
+< drwxrwxr-x   4 stuart     stuart             40 Jun 16  2016 cmsc-27100
+< drwxrwxr-x   4 stuart     stuart             40 Jun 16  2016 cmsc-28000
+< drwxrwxrwt   4 root       root               42 Jun  4  2009 cmsc33710
+< drwxr-x---   4 __dus      __dus              53 Nov 21 07:04 courseinfo
+< drwxrws---   3 tga        cs161-graders      72 Dec  5  2011 cs161
+< drwxr-xr-x   4 www-data   www-data           62 Aug 14  2013 csil_downtime
+< drwx------   2 nick       staff               6 Nov 30  2012 cspp50101
+< drwxrwsr-x   4 mark       51023-01           46 Mar 21  2007 cspp51023
+< drwxr-xr-x   2 asiegel    51036-01           32 Dec  9  2005 cspp51036
+< drwxrwsr-x  14 stuart     51044-01         4096 Apr 26  2012 cspp51044
+< drwxrwsr-x   4 samolof    csppdb           4096 Apr 24  2013 cspp53001
+< drwxr-xr-x   3 siweiw     root               31 Jan 10  2007 cspp56410
+< drwxr-s---  16 cspp53001  csppdb           4096 Dec 20  2012 csppdb
+< drwxrwx---  23 karin      cspp             4096 Oct 16  2013 cspp_share
+< drwxr-xr-x   3 root       root               71 Dec 31  2015 csq
+< drwxrwx--T   4 aterrel    csrg               44 Sep 20  2007 csrg
+< drwxr-xr-x  26 root       root             4096 May 21  2013 cvs
+< drwxrwsr-x   3 aelmore    root               25 Sep 11  2015 db
+< drwxrwsr-x   4 jhr        diderot            39 Mar 28  2013 diderot
+< drwxrwx---   4 root       techstaff          48 Aug 25 09:50 docs
+< drwxrws--x   4 adamshaw   dph                40 Mar  4  2007 dph
+< drwx------  10 epurdy     student          4096 Dec  1  2012 epurdy
+< drwxrws---  34 kirby      fenics           4096 Aug 14  2008 fenics
+< drwxr-xr-x   6 nshinrichs fretanalysis       89 Aug 29  2008 fretanalysis
+< drwxr-xr-x   4 gideond    college            61 Oct  8  2010 gideond_data
+< drwxr-xr-x  26 root       root             4096 May 21  2013 git
+< drwxrwx---   8 lafferty   hopper            118 Apr 25  2017 hopper
+< drwxr-xr-x   4 imogulta   student            42 May 10  2006 imogulta
+< drwx------  27 matveeva   student          4096 Mar 19  2007 irina
+< drwxr-xr-x   3 root       root               40 May 29  2013 java
+< drwxr-xr-x   3 danakatz   ucstaff            73 Sep 18  2008 jeffreyc
+< drwxrwxr-x   6 mvzink     jinkies            82 Aug  9  2006 jinkies
+< drwxr-xr-x   5 jinwang    college            73 Dec 23  2010 jinwang_data
+< drwxr-xr-x   9 root       root             4096 May  7  2013 lssg
+< drwxrwsr-x  18 jhr        manticore        4096 Dec 17  2014 manticore
+< drwxrws---   3 acseidel   mesh               24 May 19  2006 mesh
+< drwxrwsr-x  24 jhr        moby             4096 Aug 14  2008 moby
+< drwxrwxr-x   4 adamshaw   mobycfa          4096 May  8  2008 mobycfa
+< drwxr-xr-x   4 root       other              48 Jul 21  2005 museum
+< drwxr-x---   3 bin        other            4096 Jan  7  2005 nethack
+< drwxrwxr-x   6 bowei      nnkp               96 May  8  2006 nnkp
+< drwx------  16 borja      student          4096 Oct 10  2015 pc2
+< drwxr-xr-x   3 root       root               17 Oct  6  2011 phdnotes
+< drwxrwxr-x   9 root       _web_access       123 Feb 27  2017 player
+< drwxr-x---   3 robby      plt                40 Aug 14  2008 plt
+< drwxr-xr-x   4 nick       other              49 Aug 14  2008 rfc
+< drwxrwx---  15 risi       risigroup        4096 Dec  1 16:28 risigroup
+< drwxrwxrwt  14 root       root             4096 Feb  3  2017 scratch
+< drwxrws---  17 stuart     sitoc            4096 Mar  7  2014 sitoc
+< drwxr-xr-x  20 siweiw     student          4096 Jul  7  2010 siweiw
+< drwxrwxr-x   4 dbm        sml                79 Oct 11  2014 sml
+< drwxrws---   5 jhr        smlbasis           76 Aug 14  2008 smlbasis
+< drwxr-xr-x  29 morgan     guest            4096 Jan 20  2013 soundbox
+< lrwxrwxrwx   1 root       root               30 Apr 14  2015 southsidecivic.net -> web_static/southsidecivic.net/
+< drwxr-xr-x  26 root       root             4096 May 21  2013 svn
+< drwxrws---   7 molbakr    swift-coasters    153 Jun  4  2012 swift-coasters
+< drwxr-xr-x  14 rdb        root             4096 Jan 30  2013 techstaff
+< drwxrwsr-x  11 razborov   wwwtheory        4096 Sep 23  2015 theory
+< drwxr-xr-x   3 root       root               25 Nov 14  2012 theorycenter
+< drwxrwsr-x   4 laci       toc                45 Sep 25  2010 toc
+< drwxr-xr-x   2 turnersr   college          4096 Aug 19  2010 turnersr_data
+< drwxr-xr-x   5 root       root              109 Oct 16  2012 ucare
+< drwxr-xr-x   3 root       root               26 Apr 26  2007 vhosts
+< drwxrws---   6 sobhan     vision_grad        97 Apr  4  2011 vision
+< drwxr-xr-x  13 root       other            4096 Dec 29  2014 w3serv
+< drwxr-xr-x  74 root       root             4096 Jun 26 16:32 web_static
+< drwxrwsr-t   2 root       y-lab              32 May  5  2016 y-lab
+---
+> total 60
+> drwxr-sr-x  2 zar1 15400 4096 Feb 20  2014 attr
+> drwxr-sr-x  2 zar1 15400 4096 Feb 20  2014 coll
+> drwxr-sr-x  2 zar1 15400 4096 Feb 20  2014 comm
+> drwxr-sr-x  2 zar1 15400 4096 Feb 20  2014 datatype
+> drwxr-sr-x  2 zar1 15400 4096 Feb 20  2014 debugger
+> drwxr-sr-x  2 zar1 15400 4096 Feb 20  2014 errhan
+> drwxr-sr-x  2 zar1 15400 4096 Feb 20  2014 group
+> drwxr-sr-x  2 zar1 15400 4096 Feb 20  2014 info
+> drwxr-sr-x  2 zar1 15400 4096 Feb 20  2014 init
+> drwxr-sr-x  2 zar1 15400   76 Feb 20  2014 io
+> -rw-r--r--  1 zar1 15400 2322 Feb 20  2014 Makefile.mk
+> drwxr-sr-x  2 zar1 15400  145 Feb 20  2014 misc
+> drwxr-sr-x  2 zar1 15400 4096 Feb 20  2014 pt2pt
+> drwxr-sr-x  2 zar1 15400 4096 Feb 20  2014 rma
+> drwxr-sr-x 11 zar1 15400 4096 Feb 20  2014 romio
+> drwxr-sr-x  2 zar1 15400 4096 Feb 20  2014 spawn
+> drwxr-sr-x  2 zar1 15400  137 Feb 20  2014 timer
+> drwxr-sr-x  2 zar1 15400 4096 Feb 20  2014 topo
+197c45
+< /stage
+---
+> /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/src/mpi
+199d46
+< An error has occurred
+201c48
+< /stage
+---
+> /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/src/mpi/timer
+204c51
+< /
+---
+> /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/src/mpi
+
+
+Diffing gooduser_args.stderr
+gooduser_args       0	8
+----------------------------------
+Running batch file: gooduser_rd
+Diffing gooduser_rd.stdout
+
+
+Diffing gooduser_rd.stderr
+1,2d0
+< ls: write error: Bad file descriptor
+< ls: write error: Bad file descriptor
+
+
+Diffing gooduser_rd_rd_1
+Diffing gooduser_rd_rd_2
+gooduser_rd         0	8
+----------------------------------
+Running batch file: gooduser_multipleCommand
+Diffing gooduser_multipleCommand.stdout
+3,4c3
+< /
+< An error has occurred
+---
+> /stage/classes/archive/2014/spring/15400/p4shell
+
+
+Diffing gooduser_multipleCommand.stderr
+gooduser_multipleCommand0	8
+----------------------------------
+Running batch file: buildin_wrongFormat
+Diffing buildin_wrongFormat.stdout
+3d2
+< An error has occurred
+6d4
+< An error has occurred
+28a27,81
+> pwd argv2 argv3
+> An error has occurred
+> pwd argv4 pwd argv5
+> An error has occurred
+> pwd>
+> An error has occurred
+> pwd >
+> An error has occurred
+> pwd >buildin_wrongFormat_rd_9 
+> An error has occurred
+> pwd>buildin_wrongFormat_rd_10 
+> An error has occurred
+> pwd > buildin_wrongFormat_rd_11 
+> An error has occurred
+> pwd> buildin_wrongFormat_rd_12 
+> An error has occurred
+> pwd / /
+> An error has occurred
+> pwd / >buildin_wrongFormat_rd_13 
+> An error has occurred
+> pwd />buildin_wrongFormat_rd_14 
+> An error has occurred
+> pwd / > buildin_wrongFormat_rd_15 
+> An error has occurred
+> pwd /> buildin_wrongFormat_rd_16 
+> An error has occurred
+> exit argv1
+> An error has occurred
+> exit argv2 argv3
+> An error has occurred
+> exit argv4 exit argv5
+> An error has occurred
+> exit>
+> An error has occurred
+> exit >
+> An error has occurred
+> exit >buildin_wrongFormat_rd_17 
+> An error has occurred
+> exit>buildin_wrongFormat_rd_18 
+> An error has occurred
+> exit > buildin_wrongFormat_rd_19
+> An error has occurred
+> exit> buildin_wrongFormat_rd_20
+> An error has occurred
+> exit / /
+> An error has occurred
+> exit / >buildin_wrongFormat_rd_21
+> An error has occurred
+> exit />buildin_wrongFormat_rd_22
+> An error has occurred
+> exit / > buildin_wrongFormat_rd_23
+> An error has occurred
+> exit /> buildin_wrongFormat_rd_24
+> An error has occurred
+> exit
+
+
+Diffing buildin_wrongFormat.stderr
+buildin_wrongFormat 0	8
+----------------------------------
+Running batch file: cd_toFolderNotExist
+Diffing cd_toFolderNotExist.stdout
+5c5
+< /stage
+---
+> /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1
+
+
+Diffing cd_toFolderNotExist.stderr
+cd_toFolderNotExist 0	3
+----------------------------------
+Running batch file: badCommand
+Diffing badCommand.stdout
+2c2
+< aprogramdoesnotexistAn error has occurred
+---
+> An error has occurred
+4,10c4,8
+< cd.An error has occurred
+< ls /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/src /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/doc /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/src /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/doc /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/src /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/doc /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/src /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/doc /stagels /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/src /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/doc /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/src /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/doc /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/src /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/doc /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/src /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/doc /stageAn error has occurred
+< /classes/archive/2014/spring/15400/p4shell/mpich-3.1/f01
+< /classes/archive/2014/spring/15400/p4shell/mpich-3.1/f01An error has occurred
+< ls /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/src /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/doc /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/src /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/doc /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/src /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/doc /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/src /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/doc /stagels /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/src /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/doc /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/src /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/doc /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/src /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/doc /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/src /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/doc /stageAn error has occurred
+< /classes/archive/2014/spring/15400/p4shell/mpich-3.1/f001
+< /classes/archive/2014/spring/15400/p4shell/mpich-3.1/f001An error has occurred
+---
+> An error has occurred
+> ls /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/src /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/doc /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/src /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/doc /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/src /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/doc /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/src /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/doc /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/f01
+> An error has occurred
+> ls /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/src /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/doc /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/src /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/doc /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/src /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/doc /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/src /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/doc /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/f001
+> An error has occurred
+12,13c10,12
+< notacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnAn error has occurred
+< notacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnonotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnoAn error has occurred
+---
+> An error has occurred
+> notacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdnotacmdno
+> An error has occurred
+15,17d13
+< 
+< 
+< 
+
+
+Diffing badCommand.stderr
+badCommand          0	4
+----------------------------------
+Running batch file: complexCommand
+Diffing complexCommand.stdout
+188a189,196
+>     October 2008      
+> Su Mo Tu We Th Fr Sa  
+>           1  2  3  4  
+>  5  6  7  8  9 10 11  
+> 12 13 14 15 16 17 18  
+> 19 20 21 22 23 24 25  
+> 26 27 28 29 30 31     
+>                       
+
+
+Diffing complexCommand.stderr
+complexCommand      0	6
+----------------------------------
+Running batch file: multipleCommand
+Diffing multipleCommand.stdout
+3,193c3,53
+< /stage
+< admin_share
+< advjava
+< analysa
+< android
+< android-bootcamp
+< baton
+< borjanfs
+< branchpredictor
+< ceres
+< cgi-cmsc
+< cgi-cmsc-cspp
+< cgi-cspp
+< cgi-general
+< chinese_corpora
+< classes
+< cmsc121
+< cmsc122
+< cmsc122-share
+< cmsc15100
+< cmsc-16100
+< cmsc-16200
+< cmsc-22311
+< cmsc226
+< cmsc23000
+< cmsc237
+< cmsc23710
+< cmsc25030
+< cmsc-27100
+< cmsc-28000
+< cmsc33710
+< courseinfo
+< cs161
+< csil_downtime
+< cspp50101
+< cspp51023
+< cspp51036
+< cspp51044
+< cspp53001
+< cspp56410
+< csppdb
+< cspp_share
+< csq
+< csrg
+< cvs
+< db
+< diderot
+< docs
+< dph
+< epurdy
+< fenics
+< fretanalysis
+< gideond_data
+< git
+< hopper
+< imogulta
+< irina
+< java
+< jeffreyc
+< jinkies
+< jinwang_data
+< lssg
+< manticore
+< mesh
+< moby
+< mobycfa
+< museum
+< nethack
+< nnkp
+< pc2
+< phdnotes
+< player
+< plt
+< rfc
+< risigroup
+< scratch
+< sitoc
+< siweiw
+< sml
+< smlbasis
+< soundbox
+< southsidecivic.net
+< svn
+< swift-coasters
+< techstaff
+< theory
+< theorycenter
+< toc
+< turnersr_data
+< ucare
+< vhosts
+< vision
+< w3serv
+< web_static
+< y-lab
+< /stage
+< total 184
+< drwxrws---   3 nitayack   admin             112 Feb  2  2012 admin_share
+< drwxr-xr-x   3 gerber     www-data           25 Sep 19  2016 advjava
+< drwxr-x---   8 root       other            4096 Jan  7  2005 analysa
+< drwxr-xr-x   3 root       root               43 May 29  2013 android
+< drwxr-xr-x   3 gerber     root               17 Apr  3  2013 android-bootcamp
+< drwxrwxr-x   5 amr        baton             100 Jul 10  2007 baton
+< drwxr-xr-x   4 borja      student          4096 Mar  2  2012 borjanfs
+< drwxrwsr-x   4 bboven     branchpredictor    47 Jan 27  2006 branchpredictor
+< drwxrwsr-x   3 aachien    systems-faculty  4096 Mar 10  2017 ceres
+< drwxr-xr-x 588 root       root            16384 May 26  2015 cgi-cmsc
+< lrwxrwxrwx   1 root       root                8 May 18  2015 cgi-cmsc-cspp -> cgi-cspp
+< lrwxrwxrwx   1 root       root                8 May 19  2015 cgi-cspp -> cgi-cmsc
+< drwxr-xr-x 486 root       root            12288 Jan 14  2015 cgi-general
+< drwxrwsr-x   5 gkobele    chinese-corpora    90 Oct 22  2013 chinese_corpora
+< drwxr-xr-x   8 root       other            4096 Sep 25 10:24 classes
+< drwxr-xr-x   3 rdb        root               60 Sep 28  2014 cmsc121
+< drwxr-xr-x   3 rdb        root               90 Jan  7  2015 cmsc122
+< drwxrwsr-x   3 amr        12100-01           26 Mar  9  2015 cmsc122-share
+< drwxrws---   4 jhr        15100-00           42 Sep 27  2010 cmsc15100
+< drwxrwxr-x   4 stuart     stuart             40 Sep 19  2014 cmsc-16100
+< drwxr-xr-x   5 root       root               67 Nov 19  2014 cmsc-16200
+< drwxr-xr-x   4 root       root               40 Dec  5  2014 cmsc-22311
+< drwxrwsr-x   4 jhr        cs226              67 Dec  9  2005 cmsc226
+< drwxrwsr-x   7 jhr        23000-01           88 Jan 24  2006 cmsc23000
+< drwxrwsr-x  10 jhr        23700-00          141 Oct 17  2005 cmsc237
+< drwxrwxrwt   5 root       root               57 Jun 23  2009 cmsc23710
+< drwxrwsr-x   3 morgan     25030-01           26 Apr 27  2009 cmsc25030
+< drwxrwxr-x   4 stuart     stuart             40 Jun 16  2016 cmsc-27100
+< drwxrwxr-x   4 stuart     stuart             40 Jun 16  2016 cmsc-28000
+< drwxrwxrwt   4 root       root               42 Jun  4  2009 cmsc33710
+< drwxr-x---   4 __dus      __dus              53 Nov 21 07:04 courseinfo
+< drwxrws---   3 tga        cs161-graders      72 Dec  5  2011 cs161
+< drwxr-xr-x   4 www-data   www-data           62 Aug 14  2013 csil_downtime
+< drwx------   2 nick       staff               6 Nov 30  2012 cspp50101
+< drwxrwsr-x   4 mark       51023-01           46 Mar 21  2007 cspp51023
+< drwxr-xr-x   2 asiegel    51036-01           32 Dec  9  2005 cspp51036
+< drwxrwsr-x  14 stuart     51044-01         4096 Apr 26  2012 cspp51044
+< drwxrwsr-x   4 samolof    csppdb           4096 Apr 24  2013 cspp53001
+< drwxr-xr-x   3 siweiw     root               31 Jan 10  2007 cspp56410
+< drwxr-s---  16 cspp53001  csppdb           4096 Dec 20  2012 csppdb
+< drwxrwx---  23 karin      cspp             4096 Oct 16  2013 cspp_share
+< drwxr-xr-x   3 root       root               71 Dec 31  2015 csq
+< drwxrwx--T   4 aterrel    csrg               44 Sep 20  2007 csrg
+< drwxr-xr-x  26 root       root             4096 May 21  2013 cvs
+< drwxrwsr-x   3 aelmore    root               25 Sep 11  2015 db
+< drwxrwsr-x   4 jhr        diderot            39 Mar 28  2013 diderot
+< drwxrwx---   4 root       techstaff          48 Aug 25 09:50 docs
+< drwxrws--x   4 adamshaw   dph                40 Mar  4  2007 dph
+< drwx------  10 epurdy     student          4096 Dec  1  2012 epurdy
+< drwxrws---  34 kirby      fenics           4096 Aug 14  2008 fenics
+< drwxr-xr-x   6 nshinrichs fretanalysis       89 Aug 29  2008 fretanalysis
+< drwxr-xr-x   4 gideond    college            61 Oct  8  2010 gideond_data
+< drwxr-xr-x  26 root       root             4096 May 21  2013 git
+< drwxrwx---   8 lafferty   hopper            118 Apr 25  2017 hopper
+< drwxr-xr-x   4 imogulta   student            42 May 10  2006 imogulta
+< drwx------  27 matveeva   student          4096 Mar 19  2007 irina
+< drwxr-xr-x   3 root       root               40 May 29  2013 java
+< drwxr-xr-x   3 danakatz   ucstaff            73 Sep 18  2008 jeffreyc
+< drwxrwxr-x   6 mvzink     jinkies            82 Aug  9  2006 jinkies
+< drwxr-xr-x   5 jinwang    college            73 Dec 23  2010 jinwang_data
+< drwxr-xr-x   9 root       root             4096 May  7  2013 lssg
+< drwxrwsr-x  18 jhr        manticore        4096 Dec 17  2014 manticore
+< drwxrws---   3 acseidel   mesh               24 May 19  2006 mesh
+< drwxrwsr-x  24 jhr        moby             4096 Aug 14  2008 moby
+< drwxrwxr-x   4 adamshaw   mobycfa          4096 May  8  2008 mobycfa
+< drwxr-xr-x   4 root       other              48 Jul 21  2005 museum
+< drwxr-x---   3 bin        other            4096 Jan  7  2005 nethack
+< drwxrwxr-x   6 bowei      nnkp               96 May  8  2006 nnkp
+< drwx------  16 borja      student          4096 Oct 10  2015 pc2
+< drwxr-xr-x   3 root       root               17 Oct  6  2011 phdnotes
+< drwxrwxr-x   9 root       _web_access       123 Feb 27  2017 player
+< drwxr-x---   3 robby      plt                40 Aug 14  2008 plt
+< drwxr-xr-x   4 nick       other              49 Aug 14  2008 rfc
+< drwxrwx---  15 risi       risigroup        4096 Dec  1 16:28 risigroup
+< drwxrwxrwt  14 root       root             4096 Feb  3  2017 scratch
+< drwxrws---  17 stuart     sitoc            4096 Mar  7  2014 sitoc
+< drwxr-xr-x  20 siweiw     student          4096 Jul  7  2010 siweiw
+< drwxrwxr-x   4 dbm        sml                79 Oct 11  2014 sml
+< drwxrws---   5 jhr        smlbasis           76 Aug 14  2008 smlbasis
+< drwxr-xr-x  29 morgan     guest            4096 Jan 20  2013 soundbox
+< lrwxrwxrwx   1 root       root               30 Apr 14  2015 southsidecivic.net -> web_static/southsidecivic.net/
+< drwxr-xr-x  26 root       root             4096 May 21  2013 svn
+< drwxrws---   7 molbakr    swift-coasters    153 Jun  4  2012 swift-coasters
+< drwxr-xr-x  14 rdb        root             4096 Jan 30  2013 techstaff
+< drwxrwsr-x  11 razborov   wwwtheory        4096 Sep 23  2015 theory
+< drwxr-xr-x   3 root       root               25 Nov 14  2012 theorycenter
+< drwxrwsr-x   4 laci       toc                45 Sep 25  2010 toc
+< drwxr-xr-x   2 turnersr   college          4096 Aug 19  2010 turnersr_data
+< drwxr-xr-x   5 root       root              109 Oct 16  2012 ucare
+< drwxr-xr-x   3 root       root               26 Apr 26  2007 vhosts
+< drwxrws---   6 sobhan     vision_grad        97 Apr  4  2011 vision
+< drwxr-xr-x  13 root       other            4096 Dec 29  2014 w3serv
+< drwxr-xr-x  74 root       root             4096 Jun 26 16:32 web_static
+< drwxrwsr-t   2 root       y-lab              32 May  5  2016 y-lab
+---
+> /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1
+> aclocal.m4
+> autogen.sh
+> CHANGES
+> confdb
+> configure
+> configure.ac
+> contrib
+> COPYRIGHT
+> doc
+> examples
+> maint
+> Makefile.am
+> Makefile.in
+> man
+> mpich.def
+> mpich-doxygen.in
+> mpi.def
+> README
+> README.envvar
+> RELEASE_NOTES
+> src
+> subsys_include.m4
+> test
+> www
+> /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1
+> total 4916
+> -rw-r--r--  1 zar1 15400   47362 Feb 20  2014 aclocal.m4
+> -rw-r--r--  1 zar1 15400   28526 Feb 20  2014 autogen.sh
+> -rw-r--r--  1 zar1 15400   63098 Feb 20  2014 CHANGES
+> drwxr-sr-x  2 zar1 15400    4096 Feb 20  2014 confdb
+> -rw-r--r--  1 zar1 15400 1798912 Feb 20  2014 configure
+> -rw-r--r--  1 zar1 15400  231733 Feb 20  2014 configure.ac
+> drwxr-sr-x  3 zar1 15400      42 Feb 20  2014 contrib
+> -rw-r--r--  1 zar1 15400    1439 Feb 20  2014 COPYRIGHT
+> drwxr-sr-x 10 zar1 15400    4096 Feb 20  2014 doc
+> drwxr-sr-x  6 zar1 15400    4096 Feb 20  2014 examples
+> drwxr-sr-x  4 zar1 15400    4096 Feb 20  2014 maint
+> -rw-r--r--  1 zar1 15400   17088 Feb 20  2014 Makefile.am
+> -rw-r--r--  1 zar1 15400 2638605 Feb 20  2014 Makefile.in
+> drwxr-sr-x  4 zar1 15400      40 Feb 20  2014 man
+> -rw-r--r--  1 zar1 15400   21620 Feb 20  2014 mpich.def
+> -rw-r--r--  1 zar1 15400   51981 Feb 20  2014 mpich-doxygen.in
+> -rw-r--r--  1 zar1 15400   15827 Feb 20  2014 mpi.def
+> -rw-r--r--  1 zar1 15400   33162 Feb 20  2014 README
+> -rw-r--r--  1 zar1 15400   21919 Feb 20  2014 README.envvar
+> -rw-r--r--  1 zar1 15400    2346 Feb 20  2014 RELEASE_NOTES
+> drwxr-sr-x 18 zar1 15400    4096 Feb 20  2014 src
+> -rw-r--r--  1 zar1 15400    2452 Feb 20  2014 subsys_include.m4
+> drwxr-sr-x  9 zar1 15400    4096 Feb 20  2014 test
+> drwxr-sr-x  4 zar1 15400      40 Feb 20  2014 www
+195,385c55,105
+< /stage
+< admin_share
+< advjava
+< analysa
+< android
+< android-bootcamp
+< baton
+< borjanfs
+< branchpredictor
+< ceres
+< cgi-cmsc
+< cgi-cmsc-cspp
+< cgi-cspp
+< cgi-general
+< chinese_corpora
+< classes
+< cmsc121
+< cmsc122
+< cmsc122-share
+< cmsc15100
+< cmsc-16100
+< cmsc-16200
+< cmsc-22311
+< cmsc226
+< cmsc23000
+< cmsc237
+< cmsc23710
+< cmsc25030
+< cmsc-27100
+< cmsc-28000
+< cmsc33710
+< courseinfo
+< cs161
+< csil_downtime
+< cspp50101
+< cspp51023
+< cspp51036
+< cspp51044
+< cspp53001
+< cspp56410
+< csppdb
+< cspp_share
+< csq
+< csrg
+< cvs
+< db
+< diderot
+< docs
+< dph
+< epurdy
+< fenics
+< fretanalysis
+< gideond_data
+< git
+< hopper
+< imogulta
+< irina
+< java
+< jeffreyc
+< jinkies
+< jinwang_data
+< lssg
+< manticore
+< mesh
+< moby
+< mobycfa
+< museum
+< nethack
+< nnkp
+< pc2
+< phdnotes
+< player
+< plt
+< rfc
+< risigroup
+< scratch
+< sitoc
+< siweiw
+< sml
+< smlbasis
+< soundbox
+< southsidecivic.net
+< svn
+< swift-coasters
+< techstaff
+< theory
+< theorycenter
+< toc
+< turnersr_data
+< ucare
+< vhosts
+< vision
+< w3serv
+< web_static
+< y-lab
+< /stage
+< total 184
+< drwxrws---   3 nitayack   admin             112 Feb  2  2012 admin_share
+< drwxr-xr-x   3 gerber     www-data           25 Sep 19  2016 advjava
+< drwxr-x---   8 root       other            4096 Jan  7  2005 analysa
+< drwxr-xr-x   3 root       root               43 May 29  2013 android
+< drwxr-xr-x   3 gerber     root               17 Apr  3  2013 android-bootcamp
+< drwxrwxr-x   5 amr        baton             100 Jul 10  2007 baton
+< drwxr-xr-x   4 borja      student          4096 Mar  2  2012 borjanfs
+< drwxrwsr-x   4 bboven     branchpredictor    47 Jan 27  2006 branchpredictor
+< drwxrwsr-x   3 aachien    systems-faculty  4096 Mar 10  2017 ceres
+< drwxr-xr-x 588 root       root            16384 May 26  2015 cgi-cmsc
+< lrwxrwxrwx   1 root       root                8 May 18  2015 cgi-cmsc-cspp -> cgi-cspp
+< lrwxrwxrwx   1 root       root                8 May 19  2015 cgi-cspp -> cgi-cmsc
+< drwxr-xr-x 486 root       root            12288 Jan 14  2015 cgi-general
+< drwxrwsr-x   5 gkobele    chinese-corpora    90 Oct 22  2013 chinese_corpora
+< drwxr-xr-x   8 root       other            4096 Sep 25 10:24 classes
+< drwxr-xr-x   3 rdb        root               60 Sep 28  2014 cmsc121
+< drwxr-xr-x   3 rdb        root               90 Jan  7  2015 cmsc122
+< drwxrwsr-x   3 amr        12100-01           26 Mar  9  2015 cmsc122-share
+< drwxrws---   4 jhr        15100-00           42 Sep 27  2010 cmsc15100
+< drwxrwxr-x   4 stuart     stuart             40 Sep 19  2014 cmsc-16100
+< drwxr-xr-x   5 root       root               67 Nov 19  2014 cmsc-16200
+< drwxr-xr-x   4 root       root               40 Dec  5  2014 cmsc-22311
+< drwxrwsr-x   4 jhr        cs226              67 Dec  9  2005 cmsc226
+< drwxrwsr-x   7 jhr        23000-01           88 Jan 24  2006 cmsc23000
+< drwxrwsr-x  10 jhr        23700-00          141 Oct 17  2005 cmsc237
+< drwxrwxrwt   5 root       root               57 Jun 23  2009 cmsc23710
+< drwxrwsr-x   3 morgan     25030-01           26 Apr 27  2009 cmsc25030
+< drwxrwxr-x   4 stuart     stuart             40 Jun 16  2016 cmsc-27100
+< drwxrwxr-x   4 stuart     stuart             40 Jun 16  2016 cmsc-28000
+< drwxrwxrwt   4 root       root               42 Jun  4  2009 cmsc33710
+< drwxr-x---   4 __dus      __dus              53 Nov 21 07:04 courseinfo
+< drwxrws---   3 tga        cs161-graders      72 Dec  5  2011 cs161
+< drwxr-xr-x   4 www-data   www-data           62 Aug 14  2013 csil_downtime
+< drwx------   2 nick       staff               6 Nov 30  2012 cspp50101
+< drwxrwsr-x   4 mark       51023-01           46 Mar 21  2007 cspp51023
+< drwxr-xr-x   2 asiegel    51036-01           32 Dec  9  2005 cspp51036
+< drwxrwsr-x  14 stuart     51044-01         4096 Apr 26  2012 cspp51044
+< drwxrwsr-x   4 samolof    csppdb           4096 Apr 24  2013 cspp53001
+< drwxr-xr-x   3 siweiw     root               31 Jan 10  2007 cspp56410
+< drwxr-s---  16 cspp53001  csppdb           4096 Dec 20  2012 csppdb
+< drwxrwx---  23 karin      cspp             4096 Oct 16  2013 cspp_share
+< drwxr-xr-x   3 root       root               71 Dec 31  2015 csq
+< drwxrwx--T   4 aterrel    csrg               44 Sep 20  2007 csrg
+< drwxr-xr-x  26 root       root             4096 May 21  2013 cvs
+< drwxrwsr-x   3 aelmore    root               25 Sep 11  2015 db
+< drwxrwsr-x   4 jhr        diderot            39 Mar 28  2013 diderot
+< drwxrwx---   4 root       techstaff          48 Aug 25 09:50 docs
+< drwxrws--x   4 adamshaw   dph                40 Mar  4  2007 dph
+< drwx------  10 epurdy     student          4096 Dec  1  2012 epurdy
+< drwxrws---  34 kirby      fenics           4096 Aug 14  2008 fenics
+< drwxr-xr-x   6 nshinrichs fretanalysis       89 Aug 29  2008 fretanalysis
+< drwxr-xr-x   4 gideond    college            61 Oct  8  2010 gideond_data
+< drwxr-xr-x  26 root       root             4096 May 21  2013 git
+< drwxrwx---   8 lafferty   hopper            118 Apr 25  2017 hopper
+< drwxr-xr-x   4 imogulta   student            42 May 10  2006 imogulta
+< drwx------  27 matveeva   student          4096 Mar 19  2007 irina
+< drwxr-xr-x   3 root       root               40 May 29  2013 java
+< drwxr-xr-x   3 danakatz   ucstaff            73 Sep 18  2008 jeffreyc
+< drwxrwxr-x   6 mvzink     jinkies            82 Aug  9  2006 jinkies
+< drwxr-xr-x   5 jinwang    college            73 Dec 23  2010 jinwang_data
+< drwxr-xr-x   9 root       root             4096 May  7  2013 lssg
+< drwxrwsr-x  18 jhr        manticore        4096 Dec 17  2014 manticore
+< drwxrws---   3 acseidel   mesh               24 May 19  2006 mesh
+< drwxrwsr-x  24 jhr        moby             4096 Aug 14  2008 moby
+< drwxrwxr-x   4 adamshaw   mobycfa          4096 May  8  2008 mobycfa
+< drwxr-xr-x   4 root       other              48 Jul 21  2005 museum
+< drwxr-x---   3 bin        other            4096 Jan  7  2005 nethack
+< drwxrwxr-x   6 bowei      nnkp               96 May  8  2006 nnkp
+< drwx------  16 borja      student          4096 Oct 10  2015 pc2
+< drwxr-xr-x   3 root       root               17 Oct  6  2011 phdnotes
+< drwxrwxr-x   9 root       _web_access       123 Feb 27  2017 player
+< drwxr-x---   3 robby      plt                40 Aug 14  2008 plt
+< drwxr-xr-x   4 nick       other              49 Aug 14  2008 rfc
+< drwxrwx---  15 risi       risigroup        4096 Dec  1 16:28 risigroup
+< drwxrwxrwt  14 root       root             4096 Feb  3  2017 scratch
+< drwxrws---  17 stuart     sitoc            4096 Mar  7  2014 sitoc
+< drwxr-xr-x  20 siweiw     student          4096 Jul  7  2010 siweiw
+< drwxrwxr-x   4 dbm        sml                79 Oct 11  2014 sml
+< drwxrws---   5 jhr        smlbasis           76 Aug 14  2008 smlbasis
+< drwxr-xr-x  29 morgan     guest            4096 Jan 20  2013 soundbox
+< lrwxrwxrwx   1 root       root               30 Apr 14  2015 southsidecivic.net -> web_static/southsidecivic.net/
+< drwxr-xr-x  26 root       root             4096 May 21  2013 svn
+< drwxrws---   7 molbakr    swift-coasters    153 Jun  4  2012 swift-coasters
+< drwxr-xr-x  14 rdb        root             4096 Jan 30  2013 techstaff
+< drwxrwsr-x  11 razborov   wwwtheory        4096 Sep 23  2015 theory
+< drwxr-xr-x   3 root       root               25 Nov 14  2012 theorycenter
+< drwxrwsr-x   4 laci       toc                45 Sep 25  2010 toc
+< drwxr-xr-x   2 turnersr   college          4096 Aug 19  2010 turnersr_data
+< drwxr-xr-x   5 root       root              109 Oct 16  2012 ucare
+< drwxr-xr-x   3 root       root               26 Apr 26  2007 vhosts
+< drwxrws---   6 sobhan     vision_grad        97 Apr  4  2011 vision
+< drwxr-xr-x  13 root       other            4096 Dec 29  2014 w3serv
+< drwxr-xr-x  74 root       root             4096 Jun 26 16:32 web_static
+< drwxrwsr-t   2 root       y-lab              32 May  5  2016 y-lab
+---
+> /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1
+> aclocal.m4
+> autogen.sh
+> CHANGES
+> confdb
+> configure
+> configure.ac
+> contrib
+> COPYRIGHT
+> doc
+> examples
+> maint
+> Makefile.am
+> Makefile.in
+> man
+> mpich.def
+> mpich-doxygen.in
+> mpi.def
+> README
+> README.envvar
+> RELEASE_NOTES
+> src
+> subsys_include.m4
+> test
+> www
+> /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1
+> total 4916
+> -rw-r--r--  1 zar1 15400   47362 Feb 20  2014 aclocal.m4
+> -rw-r--r--  1 zar1 15400   28526 Feb 20  2014 autogen.sh
+> -rw-r--r--  1 zar1 15400   63098 Feb 20  2014 CHANGES
+> drwxr-sr-x  2 zar1 15400    4096 Feb 20  2014 confdb
+> -rw-r--r--  1 zar1 15400 1798912 Feb 20  2014 configure
+> -rw-r--r--  1 zar1 15400  231733 Feb 20  2014 configure.ac
+> drwxr-sr-x  3 zar1 15400      42 Feb 20  2014 contrib
+> -rw-r--r--  1 zar1 15400    1439 Feb 20  2014 COPYRIGHT
+> drwxr-sr-x 10 zar1 15400    4096 Feb 20  2014 doc
+> drwxr-sr-x  6 zar1 15400    4096 Feb 20  2014 examples
+> drwxr-sr-x  4 zar1 15400    4096 Feb 20  2014 maint
+> -rw-r--r--  1 zar1 15400   17088 Feb 20  2014 Makefile.am
+> -rw-r--r--  1 zar1 15400 2638605 Feb 20  2014 Makefile.in
+> drwxr-sr-x  4 zar1 15400      40 Feb 20  2014 man
+> -rw-r--r--  1 zar1 15400   21620 Feb 20  2014 mpich.def
+> -rw-r--r--  1 zar1 15400   51981 Feb 20  2014 mpich-doxygen.in
+> -rw-r--r--  1 zar1 15400   15827 Feb 20  2014 mpi.def
+> -rw-r--r--  1 zar1 15400   33162 Feb 20  2014 README
+> -rw-r--r--  1 zar1 15400   21919 Feb 20  2014 README.envvar
+> -rw-r--r--  1 zar1 15400    2346 Feb 20  2014 RELEASE_NOTES
+> drwxr-sr-x 18 zar1 15400    4096 Feb 20  2014 src
+> -rw-r--r--  1 zar1 15400    2452 Feb 20  2014 subsys_include.m4
+> drwxr-sr-x  9 zar1 15400    4096 Feb 20  2014 test
+> drwxr-sr-x  4 zar1 15400      40 Feb 20  2014 www
+387,482c107,157
+< /stage
+< admin_share
+< advjava
+< analysa
+< android
+< android-bootcamp
+< baton
+< borjanfs
+< branchpredictor
+< ceres
+< cgi-cmsc
+< cgi-cmsc-cspp
+< cgi-cspp
+< cgi-general
+< chinese_corpora
+< classes
+< cmsc121
+< cmsc122
+< cmsc122-share
+< cmsc15100
+< cmsc-16100
+< cmsc-16200
+< cmsc-22311
+< cmsc226
+< cmsc23000
+< cmsc237
+< cmsc23710
+< cmsc25030
+< cmsc-27100
+< cmsc-28000
+< cmsc33710
+< courseinfo
+< cs161
+< csil_downtime
+< cspp50101
+< cspp51023
+< cspp51036
+< cspp51044
+< cspp53001
+< cspp56410
+< csppdb
+< cspp_share
+< csq
+< csrg
+< cvs
+< db
+< diderot
+< docs
+< dph
+< epurdy
+< fenics
+< fretanalysis
+< gideond_data
+< git
+< hopper
+< imogulta
+< irina
+< java
+< jeffreyc
+< jinkies
+< jinwang_data
+< lssg
+< manticore
+< mesh
+< moby
+< mobycfa
+< museum
+< nethack
+< nnkp
+< pc2
+< phdnotes
+< player
+< plt
+< rfc
+< risigroup
+< scratch
+< sitoc
+< siweiw
+< sml
+< smlbasis
+< soundbox
+< southsidecivic.net
+< svn
+< swift-coasters
+< techstaff
+< theory
+< theorycenter
+< toc
+< turnersr_data
+< ucare
+< vhosts
+< vision
+< w3serv
+< web_static
+< y-lab
+< /stage
+---
+> /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1
+> aclocal.m4
+> autogen.sh
+> CHANGES
+> confdb
+> configure
+> configure.ac
+> contrib
+> COPYRIGHT
+> doc
+> examples
+> maint
+> Makefile.am
+> Makefile.in
+> man
+> mpich.def
+> mpich-doxygen.in
+> mpi.def
+> README
+> README.envvar
+> RELEASE_NOTES
+> src
+> subsys_include.m4
+> test
+> www
+> /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1
+> total 4916
+> -rw-r--r--  1 zar1 15400   47362 Feb 20  2014 aclocal.m4
+> -rw-r--r--  1 zar1 15400   28526 Feb 20  2014 autogen.sh
+> -rw-r--r--  1 zar1 15400   63098 Feb 20  2014 CHANGES
+> drwxr-sr-x  2 zar1 15400    4096 Feb 20  2014 confdb
+> -rw-r--r--  1 zar1 15400 1798912 Feb 20  2014 configure
+> -rw-r--r--  1 zar1 15400  231733 Feb 20  2014 configure.ac
+> drwxr-sr-x  3 zar1 15400      42 Feb 20  2014 contrib
+> -rw-r--r--  1 zar1 15400    1439 Feb 20  2014 COPYRIGHT
+> drwxr-sr-x 10 zar1 15400    4096 Feb 20  2014 doc
+> drwxr-sr-x  6 zar1 15400    4096 Feb 20  2014 examples
+> drwxr-sr-x  4 zar1 15400    4096 Feb 20  2014 maint
+> -rw-r--r--  1 zar1 15400   17088 Feb 20  2014 Makefile.am
+> -rw-r--r--  1 zar1 15400 2638605 Feb 20  2014 Makefile.in
+> drwxr-sr-x  4 zar1 15400      40 Feb 20  2014 man
+> -rw-r--r--  1 zar1 15400   21620 Feb 20  2014 mpich.def
+> -rw-r--r--  1 zar1 15400   51981 Feb 20  2014 mpich-doxygen.in
+> -rw-r--r--  1 zar1 15400   15827 Feb 20  2014 mpi.def
+> -rw-r--r--  1 zar1 15400   33162 Feb 20  2014 README
+> -rw-r--r--  1 zar1 15400   21919 Feb 20  2014 README.envvar
+> -rw-r--r--  1 zar1 15400    2346 Feb 20  2014 RELEASE_NOTES
+> drwxr-sr-x 18 zar1 15400    4096 Feb 20  2014 src
+> -rw-r--r--  1 zar1 15400    2452 Feb 20  2014 subsys_include.m4
+> drwxr-sr-x  9 zar1 15400    4096 Feb 20  2014 test
+> drwxr-sr-x  4 zar1 15400      40 Feb 20  2014 www
+484,674c159,209
+< /stage
+< admin_share
+< advjava
+< analysa
+< android
+< android-bootcamp
+< baton
+< borjanfs
+< branchpredictor
+< ceres
+< cgi-cmsc
+< cgi-cmsc-cspp
+< cgi-cspp
+< cgi-general
+< chinese_corpora
+< classes
+< cmsc121
+< cmsc122
+< cmsc122-share
+< cmsc15100
+< cmsc-16100
+< cmsc-16200
+< cmsc-22311
+< cmsc226
+< cmsc23000
+< cmsc237
+< cmsc23710
+< cmsc25030
+< cmsc-27100
+< cmsc-28000
+< cmsc33710
+< courseinfo
+< cs161
+< csil_downtime
+< cspp50101
+< cspp51023
+< cspp51036
+< cspp51044
+< cspp53001
+< cspp56410
+< csppdb
+< cspp_share
+< csq
+< csrg
+< cvs
+< db
+< diderot
+< docs
+< dph
+< epurdy
+< fenics
+< fretanalysis
+< gideond_data
+< git
+< hopper
+< imogulta
+< irina
+< java
+< jeffreyc
+< jinkies
+< jinwang_data
+< lssg
+< manticore
+< mesh
+< moby
+< mobycfa
+< museum
+< nethack
+< nnkp
+< pc2
+< phdnotes
+< player
+< plt
+< rfc
+< risigroup
+< scratch
+< sitoc
+< siweiw
+< sml
+< smlbasis
+< soundbox
+< southsidecivic.net
+< svn
+< swift-coasters
+< techstaff
+< theory
+< theorycenter
+< toc
+< turnersr_data
+< ucare
+< vhosts
+< vision
+< w3serv
+< web_static
+< y-lab
+< /stage
+< total 184
+< drwxrws---   3 nitayack   admin             112 Feb  2  2012 admin_share
+< drwxr-xr-x   3 gerber     www-data           25 Sep 19  2016 advjava
+< drwxr-x---   8 root       other            4096 Jan  7  2005 analysa
+< drwxr-xr-x   3 root       root               43 May 29  2013 android
+< drwxr-xr-x   3 gerber     root               17 Apr  3  2013 android-bootcamp
+< drwxrwxr-x   5 amr        baton             100 Jul 10  2007 baton
+< drwxr-xr-x   4 borja      student          4096 Mar  2  2012 borjanfs
+< drwxrwsr-x   4 bboven     branchpredictor    47 Jan 27  2006 branchpredictor
+< drwxrwsr-x   3 aachien    systems-faculty  4096 Mar 10  2017 ceres
+< drwxr-xr-x 588 root       root            16384 May 26  2015 cgi-cmsc
+< lrwxrwxrwx   1 root       root                8 May 18  2015 cgi-cmsc-cspp -> cgi-cspp
+< lrwxrwxrwx   1 root       root                8 May 19  2015 cgi-cspp -> cgi-cmsc
+< drwxr-xr-x 486 root       root            12288 Jan 14  2015 cgi-general
+< drwxrwsr-x   5 gkobele    chinese-corpora    90 Oct 22  2013 chinese_corpora
+< drwxr-xr-x   8 root       other            4096 Sep 25 10:24 classes
+< drwxr-xr-x   3 rdb        root               60 Sep 28  2014 cmsc121
+< drwxr-xr-x   3 rdb        root               90 Jan  7  2015 cmsc122
+< drwxrwsr-x   3 amr        12100-01           26 Mar  9  2015 cmsc122-share
+< drwxrws---   4 jhr        15100-00           42 Sep 27  2010 cmsc15100
+< drwxrwxr-x   4 stuart     stuart             40 Sep 19  2014 cmsc-16100
+< drwxr-xr-x   5 root       root               67 Nov 19  2014 cmsc-16200
+< drwxr-xr-x   4 root       root               40 Dec  5  2014 cmsc-22311
+< drwxrwsr-x   4 jhr        cs226              67 Dec  9  2005 cmsc226
+< drwxrwsr-x   7 jhr        23000-01           88 Jan 24  2006 cmsc23000
+< drwxrwsr-x  10 jhr        23700-00          141 Oct 17  2005 cmsc237
+< drwxrwxrwt   5 root       root               57 Jun 23  2009 cmsc23710
+< drwxrwsr-x   3 morgan     25030-01           26 Apr 27  2009 cmsc25030
+< drwxrwxr-x   4 stuart     stuart             40 Jun 16  2016 cmsc-27100
+< drwxrwxr-x   4 stuart     stuart             40 Jun 16  2016 cmsc-28000
+< drwxrwxrwt   4 root       root               42 Jun  4  2009 cmsc33710
+< drwxr-x---   4 __dus      __dus              53 Nov 21 07:04 courseinfo
+< drwxrws---   3 tga        cs161-graders      72 Dec  5  2011 cs161
+< drwxr-xr-x   4 www-data   www-data           62 Aug 14  2013 csil_downtime
+< drwx------   2 nick       staff               6 Nov 30  2012 cspp50101
+< drwxrwsr-x   4 mark       51023-01           46 Mar 21  2007 cspp51023
+< drwxr-xr-x   2 asiegel    51036-01           32 Dec  9  2005 cspp51036
+< drwxrwsr-x  14 stuart     51044-01         4096 Apr 26  2012 cspp51044
+< drwxrwsr-x   4 samolof    csppdb           4096 Apr 24  2013 cspp53001
+< drwxr-xr-x   3 siweiw     root               31 Jan 10  2007 cspp56410
+< drwxr-s---  16 cspp53001  csppdb           4096 Dec 20  2012 csppdb
+< drwxrwx---  23 karin      cspp             4096 Oct 16  2013 cspp_share
+< drwxr-xr-x   3 root       root               71 Dec 31  2015 csq
+< drwxrwx--T   4 aterrel    csrg               44 Sep 20  2007 csrg
+< drwxr-xr-x  26 root       root             4096 May 21  2013 cvs
+< drwxrwsr-x   3 aelmore    root               25 Sep 11  2015 db
+< drwxrwsr-x   4 jhr        diderot            39 Mar 28  2013 diderot
+< drwxrwx---   4 root       techstaff          48 Aug 25 09:50 docs
+< drwxrws--x   4 adamshaw   dph                40 Mar  4  2007 dph
+< drwx------  10 epurdy     student          4096 Dec  1  2012 epurdy
+< drwxrws---  34 kirby      fenics           4096 Aug 14  2008 fenics
+< drwxr-xr-x   6 nshinrichs fretanalysis       89 Aug 29  2008 fretanalysis
+< drwxr-xr-x   4 gideond    college            61 Oct  8  2010 gideond_data
+< drwxr-xr-x  26 root       root             4096 May 21  2013 git
+< drwxrwx---   8 lafferty   hopper            118 Apr 25  2017 hopper
+< drwxr-xr-x   4 imogulta   student            42 May 10  2006 imogulta
+< drwx------  27 matveeva   student          4096 Mar 19  2007 irina
+< drwxr-xr-x   3 root       root               40 May 29  2013 java
+< drwxr-xr-x   3 danakatz   ucstaff            73 Sep 18  2008 jeffreyc
+< drwxrwxr-x   6 mvzink     jinkies            82 Aug  9  2006 jinkies
+< drwxr-xr-x   5 jinwang    college            73 Dec 23  2010 jinwang_data
+< drwxr-xr-x   9 root       root             4096 May  7  2013 lssg
+< drwxrwsr-x  18 jhr        manticore        4096 Dec 17  2014 manticore
+< drwxrws---   3 acseidel   mesh               24 May 19  2006 mesh
+< drwxrwsr-x  24 jhr        moby             4096 Aug 14  2008 moby
+< drwxrwxr-x   4 adamshaw   mobycfa          4096 May  8  2008 mobycfa
+< drwxr-xr-x   4 root       other              48 Jul 21  2005 museum
+< drwxr-x---   3 bin        other            4096 Jan  7  2005 nethack
+< drwxrwxr-x   6 bowei      nnkp               96 May  8  2006 nnkp
+< drwx------  16 borja      student          4096 Oct 10  2015 pc2
+< drwxr-xr-x   3 root       root               17 Oct  6  2011 phdnotes
+< drwxrwxr-x   9 root       _web_access       123 Feb 27  2017 player
+< drwxr-x---   3 robby      plt                40 Aug 14  2008 plt
+< drwxr-xr-x   4 nick       other              49 Aug 14  2008 rfc
+< drwxrwx---  15 risi       risigroup        4096 Dec  1 16:28 risigroup
+< drwxrwxrwt  14 root       root             4096 Feb  3  2017 scratch
+< drwxrws---  17 stuart     sitoc            4096 Mar  7  2014 sitoc
+< drwxr-xr-x  20 siweiw     student          4096 Jul  7  2010 siweiw
+< drwxrwxr-x   4 dbm        sml                79 Oct 11  2014 sml
+< drwxrws---   5 jhr        smlbasis           76 Aug 14  2008 smlbasis
+< drwxr-xr-x  29 morgan     guest            4096 Jan 20  2013 soundbox
+< lrwxrwxrwx   1 root       root               30 Apr 14  2015 southsidecivic.net -> web_static/southsidecivic.net/
+< drwxr-xr-x  26 root       root             4096 May 21  2013 svn
+< drwxrws---   7 molbakr    swift-coasters    153 Jun  4  2012 swift-coasters
+< drwxr-xr-x  14 rdb        root             4096 Jan 30  2013 techstaff
+< drwxrwsr-x  11 razborov   wwwtheory        4096 Sep 23  2015 theory
+< drwxr-xr-x   3 root       root               25 Nov 14  2012 theorycenter
+< drwxrwsr-x   4 laci       toc                45 Sep 25  2010 toc
+< drwxr-xr-x   2 turnersr   college          4096 Aug 19  2010 turnersr_data
+< drwxr-xr-x   5 root       root              109 Oct 16  2012 ucare
+< drwxr-xr-x   3 root       root               26 Apr 26  2007 vhosts
+< drwxrws---   6 sobhan     vision_grad        97 Apr  4  2011 vision
+< drwxr-xr-x  13 root       other            4096 Dec 29  2014 w3serv
+< drwxr-xr-x  74 root       root             4096 Jun 26 16:32 web_static
+< drwxrwsr-t   2 root       y-lab              32 May  5  2016 y-lab
+---
+> /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1
+> aclocal.m4
+> autogen.sh
+> CHANGES
+> confdb
+> configure
+> configure.ac
+> contrib
+> COPYRIGHT
+> doc
+> examples
+> maint
+> Makefile.am
+> Makefile.in
+> man
+> mpich.def
+> mpich-doxygen.in
+> mpi.def
+> README
+> README.envvar
+> RELEASE_NOTES
+> src
+> subsys_include.m4
+> test
+> www
+> /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1
+> total 4916
+> -rw-r--r--  1 zar1 15400   47362 Feb 20  2014 aclocal.m4
+> -rw-r--r--  1 zar1 15400   28526 Feb 20  2014 autogen.sh
+> -rw-r--r--  1 zar1 15400   63098 Feb 20  2014 CHANGES
+> drwxr-sr-x  2 zar1 15400    4096 Feb 20  2014 confdb
+> -rw-r--r--  1 zar1 15400 1798912 Feb 20  2014 configure
+> -rw-r--r--  1 zar1 15400  231733 Feb 20  2014 configure.ac
+> drwxr-sr-x  3 zar1 15400      42 Feb 20  2014 contrib
+> -rw-r--r--  1 zar1 15400    1439 Feb 20  2014 COPYRIGHT
+> drwxr-sr-x 10 zar1 15400    4096 Feb 20  2014 doc
+> drwxr-sr-x  6 zar1 15400    4096 Feb 20  2014 examples
+> drwxr-sr-x  4 zar1 15400    4096 Feb 20  2014 maint
+> -rw-r--r--  1 zar1 15400   17088 Feb 20  2014 Makefile.am
+> -rw-r--r--  1 zar1 15400 2638605 Feb 20  2014 Makefile.in
+> drwxr-sr-x  4 zar1 15400      40 Feb 20  2014 man
+> -rw-r--r--  1 zar1 15400   21620 Feb 20  2014 mpich.def
+> -rw-r--r--  1 zar1 15400   51981 Feb 20  2014 mpich-doxygen.in
+> -rw-r--r--  1 zar1 15400   15827 Feb 20  2014 mpi.def
+> -rw-r--r--  1 zar1 15400   33162 Feb 20  2014 README
+> -rw-r--r--  1 zar1 15400   21919 Feb 20  2014 README.envvar
+> -rw-r--r--  1 zar1 15400    2346 Feb 20  2014 RELEASE_NOTES
+> drwxr-sr-x 18 zar1 15400    4096 Feb 20  2014 src
+> -rw-r--r--  1 zar1 15400    2452 Feb 20  2014 subsys_include.m4
+> drwxr-sr-x  9 zar1 15400    4096 Feb 20  2014 test
+> drwxr-sr-x  4 zar1 15400      40 Feb 20  2014 www
+676,866c211,261
+< /stage
+< admin_share
+< advjava
+< analysa
+< android
+< android-bootcamp
+< baton
+< borjanfs
+< branchpredictor
+< ceres
+< cgi-cmsc
+< cgi-cmsc-cspp
+< cgi-cspp
+< cgi-general
+< chinese_corpora
+< classes
+< cmsc121
+< cmsc122
+< cmsc122-share
+< cmsc15100
+< cmsc-16100
+< cmsc-16200
+< cmsc-22311
+< cmsc226
+< cmsc23000
+< cmsc237
+< cmsc23710
+< cmsc25030
+< cmsc-27100
+< cmsc-28000
+< cmsc33710
+< courseinfo
+< cs161
+< csil_downtime
+< cspp50101
+< cspp51023
+< cspp51036
+< cspp51044
+< cspp53001
+< cspp56410
+< csppdb
+< cspp_share
+< csq
+< csrg
+< cvs
+< db
+< diderot
+< docs
+< dph
+< epurdy
+< fenics
+< fretanalysis
+< gideond_data
+< git
+< hopper
+< imogulta
+< irina
+< java
+< jeffreyc
+< jinkies
+< jinwang_data
+< lssg
+< manticore
+< mesh
+< moby
+< mobycfa
+< museum
+< nethack
+< nnkp
+< pc2
+< phdnotes
+< player
+< plt
+< rfc
+< risigroup
+< scratch
+< sitoc
+< siweiw
+< sml
+< smlbasis
+< soundbox
+< southsidecivic.net
+< svn
+< swift-coasters
+< techstaff
+< theory
+< theorycenter
+< toc
+< turnersr_data
+< ucare
+< vhosts
+< vision
+< w3serv
+< web_static
+< y-lab
+< /stage
+< total 184
+< drwxrws---   3 nitayack   admin             112 Feb  2  2012 admin_share
+< drwxr-xr-x   3 gerber     www-data           25 Sep 19  2016 advjava
+< drwxr-x---   8 root       other            4096 Jan  7  2005 analysa
+< drwxr-xr-x   3 root       root               43 May 29  2013 android
+< drwxr-xr-x   3 gerber     root               17 Apr  3  2013 android-bootcamp
+< drwxrwxr-x   5 amr        baton             100 Jul 10  2007 baton
+< drwxr-xr-x   4 borja      student          4096 Mar  2  2012 borjanfs
+< drwxrwsr-x   4 bboven     branchpredictor    47 Jan 27  2006 branchpredictor
+< drwxrwsr-x   3 aachien    systems-faculty  4096 Mar 10  2017 ceres
+< drwxr-xr-x 588 root       root            16384 May 26  2015 cgi-cmsc
+< lrwxrwxrwx   1 root       root                8 May 18  2015 cgi-cmsc-cspp -> cgi-cspp
+< lrwxrwxrwx   1 root       root                8 May 19  2015 cgi-cspp -> cgi-cmsc
+< drwxr-xr-x 486 root       root            12288 Jan 14  2015 cgi-general
+< drwxrwsr-x   5 gkobele    chinese-corpora    90 Oct 22  2013 chinese_corpora
+< drwxr-xr-x   8 root       other            4096 Sep 25 10:24 classes
+< drwxr-xr-x   3 rdb        root               60 Sep 28  2014 cmsc121
+< drwxr-xr-x   3 rdb        root               90 Jan  7  2015 cmsc122
+< drwxrwsr-x   3 amr        12100-01           26 Mar  9  2015 cmsc122-share
+< drwxrws---   4 jhr        15100-00           42 Sep 27  2010 cmsc15100
+< drwxrwxr-x   4 stuart     stuart             40 Sep 19  2014 cmsc-16100
+< drwxr-xr-x   5 root       root               67 Nov 19  2014 cmsc-16200
+< drwxr-xr-x   4 root       root               40 Dec  5  2014 cmsc-22311
+< drwxrwsr-x   4 jhr        cs226              67 Dec  9  2005 cmsc226
+< drwxrwsr-x   7 jhr        23000-01           88 Jan 24  2006 cmsc23000
+< drwxrwsr-x  10 jhr        23700-00          141 Oct 17  2005 cmsc237
+< drwxrwxrwt   5 root       root               57 Jun 23  2009 cmsc23710
+< drwxrwsr-x   3 morgan     25030-01           26 Apr 27  2009 cmsc25030
+< drwxrwxr-x   4 stuart     stuart             40 Jun 16  2016 cmsc-27100
+< drwxrwxr-x   4 stuart     stuart             40 Jun 16  2016 cmsc-28000
+< drwxrwxrwt   4 root       root               42 Jun  4  2009 cmsc33710
+< drwxr-x---   4 __dus      __dus              53 Nov 21 07:04 courseinfo
+< drwxrws---   3 tga        cs161-graders      72 Dec  5  2011 cs161
+< drwxr-xr-x   4 www-data   www-data           62 Aug 14  2013 csil_downtime
+< drwx------   2 nick       staff               6 Nov 30  2012 cspp50101
+< drwxrwsr-x   4 mark       51023-01           46 Mar 21  2007 cspp51023
+< drwxr-xr-x   2 asiegel    51036-01           32 Dec  9  2005 cspp51036
+< drwxrwsr-x  14 stuart     51044-01         4096 Apr 26  2012 cspp51044
+< drwxrwsr-x   4 samolof    csppdb           4096 Apr 24  2013 cspp53001
+< drwxr-xr-x   3 siweiw     root               31 Jan 10  2007 cspp56410
+< drwxr-s---  16 cspp53001  csppdb           4096 Dec 20  2012 csppdb
+< drwxrwx---  23 karin      cspp             4096 Oct 16  2013 cspp_share
+< drwxr-xr-x   3 root       root               71 Dec 31  2015 csq
+< drwxrwx--T   4 aterrel    csrg               44 Sep 20  2007 csrg
+< drwxr-xr-x  26 root       root             4096 May 21  2013 cvs
+< drwxrwsr-x   3 aelmore    root               25 Sep 11  2015 db
+< drwxrwsr-x   4 jhr        diderot            39 Mar 28  2013 diderot
+< drwxrwx---   4 root       techstaff          48 Aug 25 09:50 docs
+< drwxrws--x   4 adamshaw   dph                40 Mar  4  2007 dph
+< drwx------  10 epurdy     student          4096 Dec  1  2012 epurdy
+< drwxrws---  34 kirby      fenics           4096 Aug 14  2008 fenics
+< drwxr-xr-x   6 nshinrichs fretanalysis       89 Aug 29  2008 fretanalysis
+< drwxr-xr-x   4 gideond    college            61 Oct  8  2010 gideond_data
+< drwxr-xr-x  26 root       root             4096 May 21  2013 git
+< drwxrwx---   8 lafferty   hopper            118 Apr 25  2017 hopper
+< drwxr-xr-x   4 imogulta   student            42 May 10  2006 imogulta
+< drwx------  27 matveeva   student          4096 Mar 19  2007 irina
+< drwxr-xr-x   3 root       root               40 May 29  2013 java
+< drwxr-xr-x   3 danakatz   ucstaff            73 Sep 18  2008 jeffreyc
+< drwxrwxr-x   6 mvzink     jinkies            82 Aug  9  2006 jinkies
+< drwxr-xr-x   5 jinwang    college            73 Dec 23  2010 jinwang_data
+< drwxr-xr-x   9 root       root             4096 May  7  2013 lssg
+< drwxrwsr-x  18 jhr        manticore        4096 Dec 17  2014 manticore
+< drwxrws---   3 acseidel   mesh               24 May 19  2006 mesh
+< drwxrwsr-x  24 jhr        moby             4096 Aug 14  2008 moby
+< drwxrwxr-x   4 adamshaw   mobycfa          4096 May  8  2008 mobycfa
+< drwxr-xr-x   4 root       other              48 Jul 21  2005 museum
+< drwxr-x---   3 bin        other            4096 Jan  7  2005 nethack
+< drwxrwxr-x   6 bowei      nnkp               96 May  8  2006 nnkp
+< drwx------  16 borja      student          4096 Oct 10  2015 pc2
+< drwxr-xr-x   3 root       root               17 Oct  6  2011 phdnotes
+< drwxrwxr-x   9 root       _web_access       123 Feb 27  2017 player
+< drwxr-x---   3 robby      plt                40 Aug 14  2008 plt
+< drwxr-xr-x   4 nick       other              49 Aug 14  2008 rfc
+< drwxrwx---  15 risi       risigroup        4096 Dec  1 16:28 risigroup
+< drwxrwxrwt  14 root       root             4096 Feb  3  2017 scratch
+< drwxrws---  17 stuart     sitoc            4096 Mar  7  2014 sitoc
+< drwxr-xr-x  20 siweiw     student          4096 Jul  7  2010 siweiw
+< drwxrwxr-x   4 dbm        sml                79 Oct 11  2014 sml
+< drwxrws---   5 jhr        smlbasis           76 Aug 14  2008 smlbasis
+< drwxr-xr-x  29 morgan     guest            4096 Jan 20  2013 soundbox
+< lrwxrwxrwx   1 root       root               30 Apr 14  2015 southsidecivic.net -> web_static/southsidecivic.net/
+< drwxr-xr-x  26 root       root             4096 May 21  2013 svn
+< drwxrws---   7 molbakr    swift-coasters    153 Jun  4  2012 swift-coasters
+< drwxr-xr-x  14 rdb        root             4096 Jan 30  2013 techstaff
+< drwxrwsr-x  11 razborov   wwwtheory        4096 Sep 23  2015 theory
+< drwxr-xr-x   3 root       root               25 Nov 14  2012 theorycenter
+< drwxrwsr-x   4 laci       toc                45 Sep 25  2010 toc
+< drwxr-xr-x   2 turnersr   college          4096 Aug 19  2010 turnersr_data
+< drwxr-xr-x   5 root       root              109 Oct 16  2012 ucare
+< drwxr-xr-x   3 root       root               26 Apr 26  2007 vhosts
+< drwxrws---   6 sobhan     vision_grad        97 Apr  4  2011 vision
+< drwxr-xr-x  13 root       other            4096 Dec 29  2014 w3serv
+< drwxr-xr-x  74 root       root             4096 Jun 26 16:32 web_static
+< drwxrwsr-t   2 root       y-lab              32 May  5  2016 y-lab
+---
+> /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1
+> aclocal.m4
+> autogen.sh
+> CHANGES
+> confdb
+> configure
+> configure.ac
+> contrib
+> COPYRIGHT
+> doc
+> examples
+> maint
+> Makefile.am
+> Makefile.in
+> man
+> mpich.def
+> mpich-doxygen.in
+> mpi.def
+> README
+> README.envvar
+> RELEASE_NOTES
+> src
+> subsys_include.m4
+> test
+> www
+> /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1
+> total 4916
+> -rw-r--r--  1 zar1 15400   47362 Feb 20  2014 aclocal.m4
+> -rw-r--r--  1 zar1 15400   28526 Feb 20  2014 autogen.sh
+> -rw-r--r--  1 zar1 15400   63098 Feb 20  2014 CHANGES
+> drwxr-sr-x  2 zar1 15400    4096 Feb 20  2014 confdb
+> -rw-r--r--  1 zar1 15400 1798912 Feb 20  2014 configure
+> -rw-r--r--  1 zar1 15400  231733 Feb 20  2014 configure.ac
+> drwxr-sr-x  3 zar1 15400      42 Feb 20  2014 contrib
+> -rw-r--r--  1 zar1 15400    1439 Feb 20  2014 COPYRIGHT
+> drwxr-sr-x 10 zar1 15400    4096 Feb 20  2014 doc
+> drwxr-sr-x  6 zar1 15400    4096 Feb 20  2014 examples
+> drwxr-sr-x  4 zar1 15400    4096 Feb 20  2014 maint
+> -rw-r--r--  1 zar1 15400   17088 Feb 20  2014 Makefile.am
+> -rw-r--r--  1 zar1 15400 2638605 Feb 20  2014 Makefile.in
+> drwxr-sr-x  4 zar1 15400      40 Feb 20  2014 man
+> -rw-r--r--  1 zar1 15400   21620 Feb 20  2014 mpich.def
+> -rw-r--r--  1 zar1 15400   51981 Feb 20  2014 mpich-doxygen.in
+> -rw-r--r--  1 zar1 15400   15827 Feb 20  2014 mpi.def
+> -rw-r--r--  1 zar1 15400   33162 Feb 20  2014 README
+> -rw-r--r--  1 zar1 15400   21919 Feb 20  2014 README.envvar
+> -rw-r--r--  1 zar1 15400    2346 Feb 20  2014 RELEASE_NOTES
+> drwxr-sr-x 18 zar1 15400    4096 Feb 20  2014 src
+> -rw-r--r--  1 zar1 15400    2452 Feb 20  2014 subsys_include.m4
+> drwxr-sr-x  9 zar1 15400    4096 Feb 20  2014 test
+> drwxr-sr-x  4 zar1 15400      40 Feb 20  2014 www
+868,1058c263,313
+< /stage
+< admin_share
+< advjava
+< analysa
+< android
+< android-bootcamp
+< baton
+< borjanfs
+< branchpredictor
+< ceres
+< cgi-cmsc
+< cgi-cmsc-cspp
+< cgi-cspp
+< cgi-general
+< chinese_corpora
+< classes
+< cmsc121
+< cmsc122
+< cmsc122-share
+< cmsc15100
+< cmsc-16100
+< cmsc-16200
+< cmsc-22311
+< cmsc226
+< cmsc23000
+< cmsc237
+< cmsc23710
+< cmsc25030
+< cmsc-27100
+< cmsc-28000
+< cmsc33710
+< courseinfo
+< cs161
+< csil_downtime
+< cspp50101
+< cspp51023
+< cspp51036
+< cspp51044
+< cspp53001
+< cspp56410
+< csppdb
+< cspp_share
+< csq
+< csrg
+< cvs
+< db
+< diderot
+< docs
+< dph
+< epurdy
+< fenics
+< fretanalysis
+< gideond_data
+< git
+< hopper
+< imogulta
+< irina
+< java
+< jeffreyc
+< jinkies
+< jinwang_data
+< lssg
+< manticore
+< mesh
+< moby
+< mobycfa
+< museum
+< nethack
+< nnkp
+< pc2
+< phdnotes
+< player
+< plt
+< rfc
+< risigroup
+< scratch
+< sitoc
+< siweiw
+< sml
+< smlbasis
+< soundbox
+< southsidecivic.net
+< svn
+< swift-coasters
+< techstaff
+< theory
+< theorycenter
+< toc
+< turnersr_data
+< ucare
+< vhosts
+< vision
+< w3serv
+< web_static
+< y-lab
+< /stage
+< total 184
+< drwxrws---   3 nitayack   admin             112 Feb  2  2012 admin_share
+< drwxr-xr-x   3 gerber     www-data           25 Sep 19  2016 advjava
+< drwxr-x---   8 root       other            4096 Jan  7  2005 analysa
+< drwxr-xr-x   3 root       root               43 May 29  2013 android
+< drwxr-xr-x   3 gerber     root               17 Apr  3  2013 android-bootcamp
+< drwxrwxr-x   5 amr        baton             100 Jul 10  2007 baton
+< drwxr-xr-x   4 borja      student          4096 Mar  2  2012 borjanfs
+< drwxrwsr-x   4 bboven     branchpredictor    47 Jan 27  2006 branchpredictor
+< drwxrwsr-x   3 aachien    systems-faculty  4096 Mar 10  2017 ceres
+< drwxr-xr-x 588 root       root            16384 May 26  2015 cgi-cmsc
+< lrwxrwxrwx   1 root       root                8 May 18  2015 cgi-cmsc-cspp -> cgi-cspp
+< lrwxrwxrwx   1 root       root                8 May 19  2015 cgi-cspp -> cgi-cmsc
+< drwxr-xr-x 486 root       root            12288 Jan 14  2015 cgi-general
+< drwxrwsr-x   5 gkobele    chinese-corpora    90 Oct 22  2013 chinese_corpora
+< drwxr-xr-x   8 root       other            4096 Sep 25 10:24 classes
+< drwxr-xr-x   3 rdb        root               60 Sep 28  2014 cmsc121
+< drwxr-xr-x   3 rdb        root               90 Jan  7  2015 cmsc122
+< drwxrwsr-x   3 amr        12100-01           26 Mar  9  2015 cmsc122-share
+< drwxrws---   4 jhr        15100-00           42 Sep 27  2010 cmsc15100
+< drwxrwxr-x   4 stuart     stuart             40 Sep 19  2014 cmsc-16100
+< drwxr-xr-x   5 root       root               67 Nov 19  2014 cmsc-16200
+< drwxr-xr-x   4 root       root               40 Dec  5  2014 cmsc-22311
+< drwxrwsr-x   4 jhr        cs226              67 Dec  9  2005 cmsc226
+< drwxrwsr-x   7 jhr        23000-01           88 Jan 24  2006 cmsc23000
+< drwxrwsr-x  10 jhr        23700-00          141 Oct 17  2005 cmsc237
+< drwxrwxrwt   5 root       root               57 Jun 23  2009 cmsc23710
+< drwxrwsr-x   3 morgan     25030-01           26 Apr 27  2009 cmsc25030
+< drwxrwxr-x   4 stuart     stuart             40 Jun 16  2016 cmsc-27100
+< drwxrwxr-x   4 stuart     stuart             40 Jun 16  2016 cmsc-28000
+< drwxrwxrwt   4 root       root               42 Jun  4  2009 cmsc33710
+< drwxr-x---   4 __dus      __dus              53 Nov 21 07:04 courseinfo
+< drwxrws---   3 tga        cs161-graders      72 Dec  5  2011 cs161
+< drwxr-xr-x   4 www-data   www-data           62 Aug 14  2013 csil_downtime
+< drwx------   2 nick       staff               6 Nov 30  2012 cspp50101
+< drwxrwsr-x   4 mark       51023-01           46 Mar 21  2007 cspp51023
+< drwxr-xr-x   2 asiegel    51036-01           32 Dec  9  2005 cspp51036
+< drwxrwsr-x  14 stuart     51044-01         4096 Apr 26  2012 cspp51044
+< drwxrwsr-x   4 samolof    csppdb           4096 Apr 24  2013 cspp53001
+< drwxr-xr-x   3 siweiw     root               31 Jan 10  2007 cspp56410
+< drwxr-s---  16 cspp53001  csppdb           4096 Dec 20  2012 csppdb
+< drwxrwx---  23 karin      cspp             4096 Oct 16  2013 cspp_share
+< drwxr-xr-x   3 root       root               71 Dec 31  2015 csq
+< drwxrwx--T   4 aterrel    csrg               44 Sep 20  2007 csrg
+< drwxr-xr-x  26 root       root             4096 May 21  2013 cvs
+< drwxrwsr-x   3 aelmore    root               25 Sep 11  2015 db
+< drwxrwsr-x   4 jhr        diderot            39 Mar 28  2013 diderot
+< drwxrwx---   4 root       techstaff          48 Aug 25 09:50 docs
+< drwxrws--x   4 adamshaw   dph                40 Mar  4  2007 dph
+< drwx------  10 epurdy     student          4096 Dec  1  2012 epurdy
+< drwxrws---  34 kirby      fenics           4096 Aug 14  2008 fenics
+< drwxr-xr-x   6 nshinrichs fretanalysis       89 Aug 29  2008 fretanalysis
+< drwxr-xr-x   4 gideond    college            61 Oct  8  2010 gideond_data
+< drwxr-xr-x  26 root       root             4096 May 21  2013 git
+< drwxrwx---   8 lafferty   hopper            118 Apr 25  2017 hopper
+< drwxr-xr-x   4 imogulta   student            42 May 10  2006 imogulta
+< drwx------  27 matveeva   student          4096 Mar 19  2007 irina
+< drwxr-xr-x   3 root       root               40 May 29  2013 java
+< drwxr-xr-x   3 danakatz   ucstaff            73 Sep 18  2008 jeffreyc
+< drwxrwxr-x   6 mvzink     jinkies            82 Aug  9  2006 jinkies
+< drwxr-xr-x   5 jinwang    college            73 Dec 23  2010 jinwang_data
+< drwxr-xr-x   9 root       root             4096 May  7  2013 lssg
+< drwxrwsr-x  18 jhr        manticore        4096 Dec 17  2014 manticore
+< drwxrws---   3 acseidel   mesh               24 May 19  2006 mesh
+< drwxrwsr-x  24 jhr        moby             4096 Aug 14  2008 moby
+< drwxrwxr-x   4 adamshaw   mobycfa          4096 May  8  2008 mobycfa
+< drwxr-xr-x   4 root       other              48 Jul 21  2005 museum
+< drwxr-x---   3 bin        other            4096 Jan  7  2005 nethack
+< drwxrwxr-x   6 bowei      nnkp               96 May  8  2006 nnkp
+< drwx------  16 borja      student          4096 Oct 10  2015 pc2
+< drwxr-xr-x   3 root       root               17 Oct  6  2011 phdnotes
+< drwxrwxr-x   9 root       _web_access       123 Feb 27  2017 player
+< drwxr-x---   3 robby      plt                40 Aug 14  2008 plt
+< drwxr-xr-x   4 nick       other              49 Aug 14  2008 rfc
+< drwxrwx---  15 risi       risigroup        4096 Dec  1 16:28 risigroup
+< drwxrwxrwt  14 root       root             4096 Feb  3  2017 scratch
+< drwxrws---  17 stuart     sitoc            4096 Mar  7  2014 sitoc
+< drwxr-xr-x  20 siweiw     student          4096 Jul  7  2010 siweiw
+< drwxrwxr-x   4 dbm        sml                79 Oct 11  2014 sml
+< drwxrws---   5 jhr        smlbasis           76 Aug 14  2008 smlbasis
+< drwxr-xr-x  29 morgan     guest            4096 Jan 20  2013 soundbox
+< lrwxrwxrwx   1 root       root               30 Apr 14  2015 southsidecivic.net -> web_static/southsidecivic.net/
+< drwxr-xr-x  26 root       root             4096 May 21  2013 svn
+< drwxrws---   7 molbakr    swift-coasters    153 Jun  4  2012 swift-coasters
+< drwxr-xr-x  14 rdb        root             4096 Jan 30  2013 techstaff
+< drwxrwsr-x  11 razborov   wwwtheory        4096 Sep 23  2015 theory
+< drwxr-xr-x   3 root       root               25 Nov 14  2012 theorycenter
+< drwxrwsr-x   4 laci       toc                45 Sep 25  2010 toc
+< drwxr-xr-x   2 turnersr   college          4096 Aug 19  2010 turnersr_data
+< drwxr-xr-x   5 root       root              109 Oct 16  2012 ucare
+< drwxr-xr-x   3 root       root               26 Apr 26  2007 vhosts
+< drwxrws---   6 sobhan     vision_grad        97 Apr  4  2011 vision
+< drwxr-xr-x  13 root       other            4096 Dec 29  2014 w3serv
+< drwxr-xr-x  74 root       root             4096 Jun 26 16:32 web_static
+< drwxrwsr-t   2 root       y-lab              32 May  5  2016 y-lab
+---
+> /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1
+> aclocal.m4
+> autogen.sh
+> CHANGES
+> confdb
+> configure
+> configure.ac
+> contrib
+> COPYRIGHT
+> doc
+> examples
+> maint
+> Makefile.am
+> Makefile.in
+> man
+> mpich.def
+> mpich-doxygen.in
+> mpi.def
+> README
+> README.envvar
+> RELEASE_NOTES
+> src
+> subsys_include.m4
+> test
+> www
+> /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1
+> total 4916
+> -rw-r--r--  1 zar1 15400   47362 Feb 20  2014 aclocal.m4
+> -rw-r--r--  1 zar1 15400   28526 Feb 20  2014 autogen.sh
+> -rw-r--r--  1 zar1 15400   63098 Feb 20  2014 CHANGES
+> drwxr-sr-x  2 zar1 15400    4096 Feb 20  2014 confdb
+> -rw-r--r--  1 zar1 15400 1798912 Feb 20  2014 configure
+> -rw-r--r--  1 zar1 15400  231733 Feb 20  2014 configure.ac
+> drwxr-sr-x  3 zar1 15400      42 Feb 20  2014 contrib
+> -rw-r--r--  1 zar1 15400    1439 Feb 20  2014 COPYRIGHT
+> drwxr-sr-x 10 zar1 15400    4096 Feb 20  2014 doc
+> drwxr-sr-x  6 zar1 15400    4096 Feb 20  2014 examples
+> drwxr-sr-x  4 zar1 15400    4096 Feb 20  2014 maint
+> -rw-r--r--  1 zar1 15400   17088 Feb 20  2014 Makefile.am
+> -rw-r--r--  1 zar1 15400 2638605 Feb 20  2014 Makefile.in
+> drwxr-sr-x  4 zar1 15400      40 Feb 20  2014 man
+> -rw-r--r--  1 zar1 15400   21620 Feb 20  2014 mpich.def
+> -rw-r--r--  1 zar1 15400   51981 Feb 20  2014 mpich-doxygen.in
+> -rw-r--r--  1 zar1 15400   15827 Feb 20  2014 mpi.def
+> -rw-r--r--  1 zar1 15400   33162 Feb 20  2014 README
+> -rw-r--r--  1 zar1 15400   21919 Feb 20  2014 README.envvar
+> -rw-r--r--  1 zar1 15400    2346 Feb 20  2014 RELEASE_NOTES
+> drwxr-sr-x 18 zar1 15400    4096 Feb 20  2014 src
+> -rw-r--r--  1 zar1 15400    2452 Feb 20  2014 subsys_include.m4
+> drwxr-sr-x  9 zar1 15400    4096 Feb 20  2014 test
+> drwxr-sr-x  4 zar1 15400      40 Feb 20  2014 www
+1060,1155c315,365
+< /stage
+< admin_share
+< advjava
+< analysa
+< android
+< android-bootcamp
+< baton
+< borjanfs
+< branchpredictor
+< ceres
+< cgi-cmsc
+< cgi-cmsc-cspp
+< cgi-cspp
+< cgi-general
+< chinese_corpora
+< classes
+< cmsc121
+< cmsc122
+< cmsc122-share
+< cmsc15100
+< cmsc-16100
+< cmsc-16200
+< cmsc-22311
+< cmsc226
+< cmsc23000
+< cmsc237
+< cmsc23710
+< cmsc25030
+< cmsc-27100
+< cmsc-28000
+< cmsc33710
+< courseinfo
+< cs161
+< csil_downtime
+< cspp50101
+< cspp51023
+< cspp51036
+< cspp51044
+< cspp53001
+< cspp56410
+< csppdb
+< cspp_share
+< csq
+< csrg
+< cvs
+< db
+< diderot
+< docs
+< dph
+< epurdy
+< fenics
+< fretanalysis
+< gideond_data
+< git
+< hopper
+< imogulta
+< irina
+< java
+< jeffreyc
+< jinkies
+< jinwang_data
+< lssg
+< manticore
+< mesh
+< moby
+< mobycfa
+< museum
+< nethack
+< nnkp
+< pc2
+< phdnotes
+< player
+< plt
+< rfc
+< risigroup
+< scratch
+< sitoc
+< siweiw
+< sml
+< smlbasis
+< soundbox
+< southsidecivic.net
+< svn
+< swift-coasters
+< techstaff
+< theory
+< theorycenter
+< toc
+< turnersr_data
+< ucare
+< vhosts
+< vision
+< w3serv
+< web_static
+< y-lab
+< /stage
+---
+> /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1
+> aclocal.m4
+> autogen.sh
+> CHANGES
+> confdb
+> configure
+> configure.ac
+> contrib
+> COPYRIGHT
+> doc
+> examples
+> maint
+> Makefile.am
+> Makefile.in
+> man
+> mpich.def
+> mpich-doxygen.in
+> mpi.def
+> README
+> README.envvar
+> RELEASE_NOTES
+> src
+> subsys_include.m4
+> test
+> www
+> /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1
+> total 4916
+> -rw-r--r--  1 zar1 15400   47362 Feb 20  2014 aclocal.m4
+> -rw-r--r--  1 zar1 15400   28526 Feb 20  2014 autogen.sh
+> -rw-r--r--  1 zar1 15400   63098 Feb 20  2014 CHANGES
+> drwxr-sr-x  2 zar1 15400    4096 Feb 20  2014 confdb
+> -rw-r--r--  1 zar1 15400 1798912 Feb 20  2014 configure
+> -rw-r--r--  1 zar1 15400  231733 Feb 20  2014 configure.ac
+> drwxr-sr-x  3 zar1 15400      42 Feb 20  2014 contrib
+> -rw-r--r--  1 zar1 15400    1439 Feb 20  2014 COPYRIGHT
+> drwxr-sr-x 10 zar1 15400    4096 Feb 20  2014 doc
+> drwxr-sr-x  6 zar1 15400    4096 Feb 20  2014 examples
+> drwxr-sr-x  4 zar1 15400    4096 Feb 20  2014 maint
+> -rw-r--r--  1 zar1 15400   17088 Feb 20  2014 Makefile.am
+> -rw-r--r--  1 zar1 15400 2638605 Feb 20  2014 Makefile.in
+> drwxr-sr-x  4 zar1 15400      40 Feb 20  2014 man
+> -rw-r--r--  1 zar1 15400   21620 Feb 20  2014 mpich.def
+> -rw-r--r--  1 zar1 15400   51981 Feb 20  2014 mpich-doxygen.in
+> -rw-r--r--  1 zar1 15400   15827 Feb 20  2014 mpi.def
+> -rw-r--r--  1 zar1 15400   33162 Feb 20  2014 README
+> -rw-r--r--  1 zar1 15400   21919 Feb 20  2014 README.envvar
+> -rw-r--r--  1 zar1 15400    2346 Feb 20  2014 RELEASE_NOTES
+> drwxr-sr-x 18 zar1 15400    4096 Feb 20  2014 src
+> -rw-r--r--  1 zar1 15400    2452 Feb 20  2014 subsys_include.m4
+> drwxr-sr-x  9 zar1 15400    4096 Feb 20  2014 test
+> drwxr-sr-x  4 zar1 15400      40 Feb 20  2014 www
+1157,1347c367,417
+< /stage
+< admin_share
+< advjava
+< analysa
+< android
+< android-bootcamp
+< baton
+< borjanfs
+< branchpredictor
+< ceres
+< cgi-cmsc
+< cgi-cmsc-cspp
+< cgi-cspp
+< cgi-general
+< chinese_corpora
+< classes
+< cmsc121
+< cmsc122
+< cmsc122-share
+< cmsc15100
+< cmsc-16100
+< cmsc-16200
+< cmsc-22311
+< cmsc226
+< cmsc23000
+< cmsc237
+< cmsc23710
+< cmsc25030
+< cmsc-27100
+< cmsc-28000
+< cmsc33710
+< courseinfo
+< cs161
+< csil_downtime
+< cspp50101
+< cspp51023
+< cspp51036
+< cspp51044
+< cspp53001
+< cspp56410
+< csppdb
+< cspp_share
+< csq
+< csrg
+< cvs
+< db
+< diderot
+< docs
+< dph
+< epurdy
+< fenics
+< fretanalysis
+< gideond_data
+< git
+< hopper
+< imogulta
+< irina
+< java
+< jeffreyc
+< jinkies
+< jinwang_data
+< lssg
+< manticore
+< mesh
+< moby
+< mobycfa
+< museum
+< nethack
+< nnkp
+< pc2
+< phdnotes
+< player
+< plt
+< rfc
+< risigroup
+< scratch
+< sitoc
+< siweiw
+< sml
+< smlbasis
+< soundbox
+< southsidecivic.net
+< svn
+< swift-coasters
+< techstaff
+< theory
+< theorycenter
+< toc
+< turnersr_data
+< ucare
+< vhosts
+< vision
+< w3serv
+< web_static
+< y-lab
+< /stage
+< total 184
+< drwxrws---   3 nitayack   admin             112 Feb  2  2012 admin_share
+< drwxr-xr-x   3 gerber     www-data           25 Sep 19  2016 advjava
+< drwxr-x---   8 root       other            4096 Jan  7  2005 analysa
+< drwxr-xr-x   3 root       root               43 May 29  2013 android
+< drwxr-xr-x   3 gerber     root               17 Apr  3  2013 android-bootcamp
+< drwxrwxr-x   5 amr        baton             100 Jul 10  2007 baton
+< drwxr-xr-x   4 borja      student          4096 Mar  2  2012 borjanfs
+< drwxrwsr-x   4 bboven     branchpredictor    47 Jan 27  2006 branchpredictor
+< drwxrwsr-x   3 aachien    systems-faculty  4096 Mar 10  2017 ceres
+< drwxr-xr-x 588 root       root            16384 May 26  2015 cgi-cmsc
+< lrwxrwxrwx   1 root       root                8 May 18  2015 cgi-cmsc-cspp -> cgi-cspp
+< lrwxrwxrwx   1 root       root                8 May 19  2015 cgi-cspp -> cgi-cmsc
+< drwxr-xr-x 486 root       root            12288 Jan 14  2015 cgi-general
+< drwxrwsr-x   5 gkobele    chinese-corpora    90 Oct 22  2013 chinese_corpora
+< drwxr-xr-x   8 root       other            4096 Sep 25 10:24 classes
+< drwxr-xr-x   3 rdb        root               60 Sep 28  2014 cmsc121
+< drwxr-xr-x   3 rdb        root               90 Jan  7  2015 cmsc122
+< drwxrwsr-x   3 amr        12100-01           26 Mar  9  2015 cmsc122-share
+< drwxrws---   4 jhr        15100-00           42 Sep 27  2010 cmsc15100
+< drwxrwxr-x   4 stuart     stuart             40 Sep 19  2014 cmsc-16100
+< drwxr-xr-x   5 root       root               67 Nov 19  2014 cmsc-16200
+< drwxr-xr-x   4 root       root               40 Dec  5  2014 cmsc-22311
+< drwxrwsr-x   4 jhr        cs226              67 Dec  9  2005 cmsc226
+< drwxrwsr-x   7 jhr        23000-01           88 Jan 24  2006 cmsc23000
+< drwxrwsr-x  10 jhr        23700-00          141 Oct 17  2005 cmsc237
+< drwxrwxrwt   5 root       root               57 Jun 23  2009 cmsc23710
+< drwxrwsr-x   3 morgan     25030-01           26 Apr 27  2009 cmsc25030
+< drwxrwxr-x   4 stuart     stuart             40 Jun 16  2016 cmsc-27100
+< drwxrwxr-x   4 stuart     stuart             40 Jun 16  2016 cmsc-28000
+< drwxrwxrwt   4 root       root               42 Jun  4  2009 cmsc33710
+< drwxr-x---   4 __dus      __dus              53 Nov 21 07:04 courseinfo
+< drwxrws---   3 tga        cs161-graders      72 Dec  5  2011 cs161
+< drwxr-xr-x   4 www-data   www-data           62 Aug 14  2013 csil_downtime
+< drwx------   2 nick       staff               6 Nov 30  2012 cspp50101
+< drwxrwsr-x   4 mark       51023-01           46 Mar 21  2007 cspp51023
+< drwxr-xr-x   2 asiegel    51036-01           32 Dec  9  2005 cspp51036
+< drwxrwsr-x  14 stuart     51044-01         4096 Apr 26  2012 cspp51044
+< drwxrwsr-x   4 samolof    csppdb           4096 Apr 24  2013 cspp53001
+< drwxr-xr-x   3 siweiw     root               31 Jan 10  2007 cspp56410
+< drwxr-s---  16 cspp53001  csppdb           4096 Dec 20  2012 csppdb
+< drwxrwx---  23 karin      cspp             4096 Oct 16  2013 cspp_share
+< drwxr-xr-x   3 root       root               71 Dec 31  2015 csq
+< drwxrwx--T   4 aterrel    csrg               44 Sep 20  2007 csrg
+< drwxr-xr-x  26 root       root             4096 May 21  2013 cvs
+< drwxrwsr-x   3 aelmore    root               25 Sep 11  2015 db
+< drwxrwsr-x   4 jhr        diderot            39 Mar 28  2013 diderot
+< drwxrwx---   4 root       techstaff          48 Aug 25 09:50 docs
+< drwxrws--x   4 adamshaw   dph                40 Mar  4  2007 dph
+< drwx------  10 epurdy     student          4096 Dec  1  2012 epurdy
+< drwxrws---  34 kirby      fenics           4096 Aug 14  2008 fenics
+< drwxr-xr-x   6 nshinrichs fretanalysis       89 Aug 29  2008 fretanalysis
+< drwxr-xr-x   4 gideond    college            61 Oct  8  2010 gideond_data
+< drwxr-xr-x  26 root       root             4096 May 21  2013 git
+< drwxrwx---   8 lafferty   hopper            118 Apr 25  2017 hopper
+< drwxr-xr-x   4 imogulta   student            42 May 10  2006 imogulta
+< drwx------  27 matveeva   student          4096 Mar 19  2007 irina
+< drwxr-xr-x   3 root       root               40 May 29  2013 java
+< drwxr-xr-x   3 danakatz   ucstaff            73 Sep 18  2008 jeffreyc
+< drwxrwxr-x   6 mvzink     jinkies            82 Aug  9  2006 jinkies
+< drwxr-xr-x   5 jinwang    college            73 Dec 23  2010 jinwang_data
+< drwxr-xr-x   9 root       root             4096 May  7  2013 lssg
+< drwxrwsr-x  18 jhr        manticore        4096 Dec 17  2014 manticore
+< drwxrws---   3 acseidel   mesh               24 May 19  2006 mesh
+< drwxrwsr-x  24 jhr        moby             4096 Aug 14  2008 moby
+< drwxrwxr-x   4 adamshaw   mobycfa          4096 May  8  2008 mobycfa
+< drwxr-xr-x   4 root       other              48 Jul 21  2005 museum
+< drwxr-x---   3 bin        other            4096 Jan  7  2005 nethack
+< drwxrwxr-x   6 bowei      nnkp               96 May  8  2006 nnkp
+< drwx------  16 borja      student          4096 Oct 10  2015 pc2
+< drwxr-xr-x   3 root       root               17 Oct  6  2011 phdnotes
+< drwxrwxr-x   9 root       _web_access       123 Feb 27  2017 player
+< drwxr-x---   3 robby      plt                40 Aug 14  2008 plt
+< drwxr-xr-x   4 nick       other              49 Aug 14  2008 rfc
+< drwxrwx---  15 risi       risigroup        4096 Dec  1 16:28 risigroup
+< drwxrwxrwt  14 root       root             4096 Feb  3  2017 scratch
+< drwxrws---  17 stuart     sitoc            4096 Mar  7  2014 sitoc
+< drwxr-xr-x  20 siweiw     student          4096 Jul  7  2010 siweiw
+< drwxrwxr-x   4 dbm        sml                79 Oct 11  2014 sml
+< drwxrws---   5 jhr        smlbasis           76 Aug 14  2008 smlbasis
+< drwxr-xr-x  29 morgan     guest            4096 Jan 20  2013 soundbox
+< lrwxrwxrwx   1 root       root               30 Apr 14  2015 southsidecivic.net -> web_static/southsidecivic.net/
+< drwxr-xr-x  26 root       root             4096 May 21  2013 svn
+< drwxrws---   7 molbakr    swift-coasters    153 Jun  4  2012 swift-coasters
+< drwxr-xr-x  14 rdb        root             4096 Jan 30  2013 techstaff
+< drwxrwsr-x  11 razborov   wwwtheory        4096 Sep 23  2015 theory
+< drwxr-xr-x   3 root       root               25 Nov 14  2012 theorycenter
+< drwxrwsr-x   4 laci       toc                45 Sep 25  2010 toc
+< drwxr-xr-x   2 turnersr   college          4096 Aug 19  2010 turnersr_data
+< drwxr-xr-x   5 root       root              109 Oct 16  2012 ucare
+< drwxr-xr-x   3 root       root               26 Apr 26  2007 vhosts
+< drwxrws---   6 sobhan     vision_grad        97 Apr  4  2011 vision
+< drwxr-xr-x  13 root       other            4096 Dec 29  2014 w3serv
+< drwxr-xr-x  74 root       root             4096 Jun 26 16:32 web_static
+< drwxrwsr-t   2 root       y-lab              32 May  5  2016 y-lab
+---
+> /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1
+> aclocal.m4
+> autogen.sh
+> CHANGES
+> confdb
+> configure
+> configure.ac
+> contrib
+> COPYRIGHT
+> doc
+> examples
+> maint
+> Makefile.am
+> Makefile.in
+> man
+> mpich.def
+> mpich-doxygen.in
+> mpi.def
+> README
+> README.envvar
+> RELEASE_NOTES
+> src
+> subsys_include.m4
+> test
+> www
+> /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1
+> total 4916
+> -rw-r--r--  1 zar1 15400   47362 Feb 20  2014 aclocal.m4
+> -rw-r--r--  1 zar1 15400   28526 Feb 20  2014 autogen.sh
+> -rw-r--r--  1 zar1 15400   63098 Feb 20  2014 CHANGES
+> drwxr-sr-x  2 zar1 15400    4096 Feb 20  2014 confdb
+> -rw-r--r--  1 zar1 15400 1798912 Feb 20  2014 configure
+> -rw-r--r--  1 zar1 15400  231733 Feb 20  2014 configure.ac
+> drwxr-sr-x  3 zar1 15400      42 Feb 20  2014 contrib
+> -rw-r--r--  1 zar1 15400    1439 Feb 20  2014 COPYRIGHT
+> drwxr-sr-x 10 zar1 15400    4096 Feb 20  2014 doc
+> drwxr-sr-x  6 zar1 15400    4096 Feb 20  2014 examples
+> drwxr-sr-x  4 zar1 15400    4096 Feb 20  2014 maint
+> -rw-r--r--  1 zar1 15400   17088 Feb 20  2014 Makefile.am
+> -rw-r--r--  1 zar1 15400 2638605 Feb 20  2014 Makefile.in
+> drwxr-sr-x  4 zar1 15400      40 Feb 20  2014 man
+> -rw-r--r--  1 zar1 15400   21620 Feb 20  2014 mpich.def
+> -rw-r--r--  1 zar1 15400   51981 Feb 20  2014 mpich-doxygen.in
+> -rw-r--r--  1 zar1 15400   15827 Feb 20  2014 mpi.def
+> -rw-r--r--  1 zar1 15400   33162 Feb 20  2014 README
+> -rw-r--r--  1 zar1 15400   21919 Feb 20  2014 README.envvar
+> -rw-r--r--  1 zar1 15400    2346 Feb 20  2014 RELEASE_NOTES
+> drwxr-sr-x 18 zar1 15400    4096 Feb 20  2014 src
+> -rw-r--r--  1 zar1 15400    2452 Feb 20  2014 subsys_include.m4
+> drwxr-sr-x  9 zar1 15400    4096 Feb 20  2014 test
+> drwxr-sr-x  4 zar1 15400      40 Feb 20  2014 www
+1351,1541c421,471
+< /stage
+< admin_share
+< advjava
+< analysa
+< android
+< android-bootcamp
+< baton
+< borjanfs
+< branchpredictor
+< ceres
+< cgi-cmsc
+< cgi-cmsc-cspp
+< cgi-cspp
+< cgi-general
+< chinese_corpora
+< classes
+< cmsc121
+< cmsc122
+< cmsc122-share
+< cmsc15100
+< cmsc-16100
+< cmsc-16200
+< cmsc-22311
+< cmsc226
+< cmsc23000
+< cmsc237
+< cmsc23710
+< cmsc25030
+< cmsc-27100
+< cmsc-28000
+< cmsc33710
+< courseinfo
+< cs161
+< csil_downtime
+< cspp50101
+< cspp51023
+< cspp51036
+< cspp51044
+< cspp53001
+< cspp56410
+< csppdb
+< cspp_share
+< csq
+< csrg
+< cvs
+< db
+< diderot
+< docs
+< dph
+< epurdy
+< fenics
+< fretanalysis
+< gideond_data
+< git
+< hopper
+< imogulta
+< irina
+< java
+< jeffreyc
+< jinkies
+< jinwang_data
+< lssg
+< manticore
+< mesh
+< moby
+< mobycfa
+< museum
+< nethack
+< nnkp
+< pc2
+< phdnotes
+< player
+< plt
+< rfc
+< risigroup
+< scratch
+< sitoc
+< siweiw
+< sml
+< smlbasis
+< soundbox
+< southsidecivic.net
+< svn
+< swift-coasters
+< techstaff
+< theory
+< theorycenter
+< toc
+< turnersr_data
+< ucare
+< vhosts
+< vision
+< w3serv
+< web_static
+< y-lab
+< /stage
+< total 184
+< drwxrws---   3 nitayack   admin             112 Feb  2  2012 admin_share
+< drwxr-xr-x   3 gerber     www-data           25 Sep 19  2016 advjava
+< drwxr-x---   8 root       other            4096 Jan  7  2005 analysa
+< drwxr-xr-x   3 root       root               43 May 29  2013 android
+< drwxr-xr-x   3 gerber     root               17 Apr  3  2013 android-bootcamp
+< drwxrwxr-x   5 amr        baton             100 Jul 10  2007 baton
+< drwxr-xr-x   4 borja      student          4096 Mar  2  2012 borjanfs
+< drwxrwsr-x   4 bboven     branchpredictor    47 Jan 27  2006 branchpredictor
+< drwxrwsr-x   3 aachien    systems-faculty  4096 Mar 10  2017 ceres
+< drwxr-xr-x 588 root       root            16384 May 26  2015 cgi-cmsc
+< lrwxrwxrwx   1 root       root                8 May 18  2015 cgi-cmsc-cspp -> cgi-cspp
+< lrwxrwxrwx   1 root       root                8 May 19  2015 cgi-cspp -> cgi-cmsc
+< drwxr-xr-x 486 root       root            12288 Jan 14  2015 cgi-general
+< drwxrwsr-x   5 gkobele    chinese-corpora    90 Oct 22  2013 chinese_corpora
+< drwxr-xr-x   8 root       other            4096 Sep 25 10:24 classes
+< drwxr-xr-x   3 rdb        root               60 Sep 28  2014 cmsc121
+< drwxr-xr-x   3 rdb        root               90 Jan  7  2015 cmsc122
+< drwxrwsr-x   3 amr        12100-01           26 Mar  9  2015 cmsc122-share
+< drwxrws---   4 jhr        15100-00           42 Sep 27  2010 cmsc15100
+< drwxrwxr-x   4 stuart     stuart             40 Sep 19  2014 cmsc-16100
+< drwxr-xr-x   5 root       root               67 Nov 19  2014 cmsc-16200
+< drwxr-xr-x   4 root       root               40 Dec  5  2014 cmsc-22311
+< drwxrwsr-x   4 jhr        cs226              67 Dec  9  2005 cmsc226
+< drwxrwsr-x   7 jhr        23000-01           88 Jan 24  2006 cmsc23000
+< drwxrwsr-x  10 jhr        23700-00          141 Oct 17  2005 cmsc237
+< drwxrwxrwt   5 root       root               57 Jun 23  2009 cmsc23710
+< drwxrwsr-x   3 morgan     25030-01           26 Apr 27  2009 cmsc25030
+< drwxrwxr-x   4 stuart     stuart             40 Jun 16  2016 cmsc-27100
+< drwxrwxr-x   4 stuart     stuart             40 Jun 16  2016 cmsc-28000
+< drwxrwxrwt   4 root       root               42 Jun  4  2009 cmsc33710
+< drwxr-x---   4 __dus      __dus              53 Nov 21 07:04 courseinfo
+< drwxrws---   3 tga        cs161-graders      72 Dec  5  2011 cs161
+< drwxr-xr-x   4 www-data   www-data           62 Aug 14  2013 csil_downtime
+< drwx------   2 nick       staff               6 Nov 30  2012 cspp50101
+< drwxrwsr-x   4 mark       51023-01           46 Mar 21  2007 cspp51023
+< drwxr-xr-x   2 asiegel    51036-01           32 Dec  9  2005 cspp51036
+< drwxrwsr-x  14 stuart     51044-01         4096 Apr 26  2012 cspp51044
+< drwxrwsr-x   4 samolof    csppdb           4096 Apr 24  2013 cspp53001
+< drwxr-xr-x   3 siweiw     root               31 Jan 10  2007 cspp56410
+< drwxr-s---  16 cspp53001  csppdb           4096 Dec 20  2012 csppdb
+< drwxrwx---  23 karin      cspp             4096 Oct 16  2013 cspp_share
+< drwxr-xr-x   3 root       root               71 Dec 31  2015 csq
+< drwxrwx--T   4 aterrel    csrg               44 Sep 20  2007 csrg
+< drwxr-xr-x  26 root       root             4096 May 21  2013 cvs
+< drwxrwsr-x   3 aelmore    root               25 Sep 11  2015 db
+< drwxrwsr-x   4 jhr        diderot            39 Mar 28  2013 diderot
+< drwxrwx---   4 root       techstaff          48 Aug 25 09:50 docs
+< drwxrws--x   4 adamshaw   dph                40 Mar  4  2007 dph
+< drwx------  10 epurdy     student          4096 Dec  1  2012 epurdy
+< drwxrws---  34 kirby      fenics           4096 Aug 14  2008 fenics
+< drwxr-xr-x   6 nshinrichs fretanalysis       89 Aug 29  2008 fretanalysis
+< drwxr-xr-x   4 gideond    college            61 Oct  8  2010 gideond_data
+< drwxr-xr-x  26 root       root             4096 May 21  2013 git
+< drwxrwx---   8 lafferty   hopper            118 Apr 25  2017 hopper
+< drwxr-xr-x   4 imogulta   student            42 May 10  2006 imogulta
+< drwx------  27 matveeva   student          4096 Mar 19  2007 irina
+< drwxr-xr-x   3 root       root               40 May 29  2013 java
+< drwxr-xr-x   3 danakatz   ucstaff            73 Sep 18  2008 jeffreyc
+< drwxrwxr-x   6 mvzink     jinkies            82 Aug  9  2006 jinkies
+< drwxr-xr-x   5 jinwang    college            73 Dec 23  2010 jinwang_data
+< drwxr-xr-x   9 root       root             4096 May  7  2013 lssg
+< drwxrwsr-x  18 jhr        manticore        4096 Dec 17  2014 manticore
+< drwxrws---   3 acseidel   mesh               24 May 19  2006 mesh
+< drwxrwsr-x  24 jhr        moby             4096 Aug 14  2008 moby
+< drwxrwxr-x   4 adamshaw   mobycfa          4096 May  8  2008 mobycfa
+< drwxr-xr-x   4 root       other              48 Jul 21  2005 museum
+< drwxr-x---   3 bin        other            4096 Jan  7  2005 nethack
+< drwxrwxr-x   6 bowei      nnkp               96 May  8  2006 nnkp
+< drwx------  16 borja      student          4096 Oct 10  2015 pc2
+< drwxr-xr-x   3 root       root               17 Oct  6  2011 phdnotes
+< drwxrwxr-x   9 root       _web_access       123 Feb 27  2017 player
+< drwxr-x---   3 robby      plt                40 Aug 14  2008 plt
+< drwxr-xr-x   4 nick       other              49 Aug 14  2008 rfc
+< drwxrwx---  15 risi       risigroup        4096 Dec  1 16:28 risigroup
+< drwxrwxrwt  14 root       root             4096 Feb  3  2017 scratch
+< drwxrws---  17 stuart     sitoc            4096 Mar  7  2014 sitoc
+< drwxr-xr-x  20 siweiw     student          4096 Jul  7  2010 siweiw
+< drwxrwxr-x   4 dbm        sml                79 Oct 11  2014 sml
+< drwxrws---   5 jhr        smlbasis           76 Aug 14  2008 smlbasis
+< drwxr-xr-x  29 morgan     guest            4096 Jan 20  2013 soundbox
+< lrwxrwxrwx   1 root       root               30 Apr 14  2015 southsidecivic.net -> web_static/southsidecivic.net/
+< drwxr-xr-x  26 root       root             4096 May 21  2013 svn
+< drwxrws---   7 molbakr    swift-coasters    153 Jun  4  2012 swift-coasters
+< drwxr-xr-x  14 rdb        root             4096 Jan 30  2013 techstaff
+< drwxrwsr-x  11 razborov   wwwtheory        4096 Sep 23  2015 theory
+< drwxr-xr-x   3 root       root               25 Nov 14  2012 theorycenter
+< drwxrwsr-x   4 laci       toc                45 Sep 25  2010 toc
+< drwxr-xr-x   2 turnersr   college          4096 Aug 19  2010 turnersr_data
+< drwxr-xr-x   5 root       root              109 Oct 16  2012 ucare
+< drwxr-xr-x   3 root       root               26 Apr 26  2007 vhosts
+< drwxrws---   6 sobhan     vision_grad        97 Apr  4  2011 vision
+< drwxr-xr-x  13 root       other            4096 Dec 29  2014 w3serv
+< drwxr-xr-x  74 root       root             4096 Jun 26 16:32 web_static
+< drwxrwsr-t   2 root       y-lab              32 May  5  2016 y-lab
+---
+> /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1
+> aclocal.m4
+> autogen.sh
+> CHANGES
+> confdb
+> configure
+> configure.ac
+> contrib
+> COPYRIGHT
+> doc
+> examples
+> maint
+> Makefile.am
+> Makefile.in
+> man
+> mpich.def
+> mpich-doxygen.in
+> mpi.def
+> README
+> README.envvar
+> RELEASE_NOTES
+> src
+> subsys_include.m4
+> test
+> www
+> /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1
+> total 4916
+> -rw-r--r--  1 zar1 15400   47362 Feb 20  2014 aclocal.m4
+> -rw-r--r--  1 zar1 15400   28526 Feb 20  2014 autogen.sh
+> -rw-r--r--  1 zar1 15400   63098 Feb 20  2014 CHANGES
+> drwxr-sr-x  2 zar1 15400    4096 Feb 20  2014 confdb
+> -rw-r--r--  1 zar1 15400 1798912 Feb 20  2014 configure
+> -rw-r--r--  1 zar1 15400  231733 Feb 20  2014 configure.ac
+> drwxr-sr-x  3 zar1 15400      42 Feb 20  2014 contrib
+> -rw-r--r--  1 zar1 15400    1439 Feb 20  2014 COPYRIGHT
+> drwxr-sr-x 10 zar1 15400    4096 Feb 20  2014 doc
+> drwxr-sr-x  6 zar1 15400    4096 Feb 20  2014 examples
+> drwxr-sr-x  4 zar1 15400    4096 Feb 20  2014 maint
+> -rw-r--r--  1 zar1 15400   17088 Feb 20  2014 Makefile.am
+> -rw-r--r--  1 zar1 15400 2638605 Feb 20  2014 Makefile.in
+> drwxr-sr-x  4 zar1 15400      40 Feb 20  2014 man
+> -rw-r--r--  1 zar1 15400   21620 Feb 20  2014 mpich.def
+> -rw-r--r--  1 zar1 15400   51981 Feb 20  2014 mpich-doxygen.in
+> -rw-r--r--  1 zar1 15400   15827 Feb 20  2014 mpi.def
+> -rw-r--r--  1 zar1 15400   33162 Feb 20  2014 README
+> -rw-r--r--  1 zar1 15400   21919 Feb 20  2014 README.envvar
+> -rw-r--r--  1 zar1 15400    2346 Feb 20  2014 RELEASE_NOTES
+> drwxr-sr-x 18 zar1 15400    4096 Feb 20  2014 src
+> -rw-r--r--  1 zar1 15400    2452 Feb 20  2014 subsys_include.m4
+> drwxr-sr-x  9 zar1 15400    4096 Feb 20  2014 test
+> drwxr-sr-x  4 zar1 15400      40 Feb 20  2014 www
+1543,1733c473,523
+< /stage
+< admin_share
+< advjava
+< analysa
+< android
+< android-bootcamp
+< baton
+< borjanfs
+< branchpredictor
+< ceres
+< cgi-cmsc
+< cgi-cmsc-cspp
+< cgi-cspp
+< cgi-general
+< chinese_corpora
+< classes
+< cmsc121
+< cmsc122
+< cmsc122-share
+< cmsc15100
+< cmsc-16100
+< cmsc-16200
+< cmsc-22311
+< cmsc226
+< cmsc23000
+< cmsc237
+< cmsc23710
+< cmsc25030
+< cmsc-27100
+< cmsc-28000
+< cmsc33710
+< courseinfo
+< cs161
+< csil_downtime
+< cspp50101
+< cspp51023
+< cspp51036
+< cspp51044
+< cspp53001
+< cspp56410
+< csppdb
+< cspp_share
+< csq
+< csrg
+< cvs
+< db
+< diderot
+< docs
+< dph
+< epurdy
+< fenics
+< fretanalysis
+< gideond_data
+< git
+< hopper
+< imogulta
+< irina
+< java
+< jeffreyc
+< jinkies
+< jinwang_data
+< lssg
+< manticore
+< mesh
+< moby
+< mobycfa
+< museum
+< nethack
+< nnkp
+< pc2
+< phdnotes
+< player
+< plt
+< rfc
+< risigroup
+< scratch
+< sitoc
+< siweiw
+< sml
+< smlbasis
+< soundbox
+< southsidecivic.net
+< svn
+< swift-coasters
+< techstaff
+< theory
+< theorycenter
+< toc
+< turnersr_data
+< ucare
+< vhosts
+< vision
+< w3serv
+< web_static
+< y-lab
+< /stage
+< total 184
+< drwxrws---   3 nitayack   admin             112 Feb  2  2012 admin_share
+< drwxr-xr-x   3 gerber     www-data           25 Sep 19  2016 advjava
+< drwxr-x---   8 root       other            4096 Jan  7  2005 analysa
+< drwxr-xr-x   3 root       root               43 May 29  2013 android
+< drwxr-xr-x   3 gerber     root               17 Apr  3  2013 android-bootcamp
+< drwxrwxr-x   5 amr        baton             100 Jul 10  2007 baton
+< drwxr-xr-x   4 borja      student          4096 Mar  2  2012 borjanfs
+< drwxrwsr-x   4 bboven     branchpredictor    47 Jan 27  2006 branchpredictor
+< drwxrwsr-x   3 aachien    systems-faculty  4096 Mar 10  2017 ceres
+< drwxr-xr-x 588 root       root            16384 May 26  2015 cgi-cmsc
+< lrwxrwxrwx   1 root       root                8 May 18  2015 cgi-cmsc-cspp -> cgi-cspp
+< lrwxrwxrwx   1 root       root                8 May 19  2015 cgi-cspp -> cgi-cmsc
+< drwxr-xr-x 486 root       root            12288 Jan 14  2015 cgi-general
+< drwxrwsr-x   5 gkobele    chinese-corpora    90 Oct 22  2013 chinese_corpora
+< drwxr-xr-x   8 root       other            4096 Sep 25 10:24 classes
+< drwxr-xr-x   3 rdb        root               60 Sep 28  2014 cmsc121
+< drwxr-xr-x   3 rdb        root               90 Jan  7  2015 cmsc122
+< drwxrwsr-x   3 amr        12100-01           26 Mar  9  2015 cmsc122-share
+< drwxrws---   4 jhr        15100-00           42 Sep 27  2010 cmsc15100
+< drwxrwxr-x   4 stuart     stuart             40 Sep 19  2014 cmsc-16100
+< drwxr-xr-x   5 root       root               67 Nov 19  2014 cmsc-16200
+< drwxr-xr-x   4 root       root               40 Dec  5  2014 cmsc-22311
+< drwxrwsr-x   4 jhr        cs226              67 Dec  9  2005 cmsc226
+< drwxrwsr-x   7 jhr        23000-01           88 Jan 24  2006 cmsc23000
+< drwxrwsr-x  10 jhr        23700-00          141 Oct 17  2005 cmsc237
+< drwxrwxrwt   5 root       root               57 Jun 23  2009 cmsc23710
+< drwxrwsr-x   3 morgan     25030-01           26 Apr 27  2009 cmsc25030
+< drwxrwxr-x   4 stuart     stuart             40 Jun 16  2016 cmsc-27100
+< drwxrwxr-x   4 stuart     stuart             40 Jun 16  2016 cmsc-28000
+< drwxrwxrwt   4 root       root               42 Jun  4  2009 cmsc33710
+< drwxr-x---   4 __dus      __dus              53 Nov 21 07:04 courseinfo
+< drwxrws---   3 tga        cs161-graders      72 Dec  5  2011 cs161
+< drwxr-xr-x   4 www-data   www-data           62 Aug 14  2013 csil_downtime
+< drwx------   2 nick       staff               6 Nov 30  2012 cspp50101
+< drwxrwsr-x   4 mark       51023-01           46 Mar 21  2007 cspp51023
+< drwxr-xr-x   2 asiegel    51036-01           32 Dec  9  2005 cspp51036
+< drwxrwsr-x  14 stuart     51044-01         4096 Apr 26  2012 cspp51044
+< drwxrwsr-x   4 samolof    csppdb           4096 Apr 24  2013 cspp53001
+< drwxr-xr-x   3 siweiw     root               31 Jan 10  2007 cspp56410
+< drwxr-s---  16 cspp53001  csppdb           4096 Dec 20  2012 csppdb
+< drwxrwx---  23 karin      cspp             4096 Oct 16  2013 cspp_share
+< drwxr-xr-x   3 root       root               71 Dec 31  2015 csq
+< drwxrwx--T   4 aterrel    csrg               44 Sep 20  2007 csrg
+< drwxr-xr-x  26 root       root             4096 May 21  2013 cvs
+< drwxrwsr-x   3 aelmore    root               25 Sep 11  2015 db
+< drwxrwsr-x   4 jhr        diderot            39 Mar 28  2013 diderot
+< drwxrwx---   4 root       techstaff          48 Aug 25 09:50 docs
+< drwxrws--x   4 adamshaw   dph                40 Mar  4  2007 dph
+< drwx------  10 epurdy     student          4096 Dec  1  2012 epurdy
+< drwxrws---  34 kirby      fenics           4096 Aug 14  2008 fenics
+< drwxr-xr-x   6 nshinrichs fretanalysis       89 Aug 29  2008 fretanalysis
+< drwxr-xr-x   4 gideond    college            61 Oct  8  2010 gideond_data
+< drwxr-xr-x  26 root       root             4096 May 21  2013 git
+< drwxrwx---   8 lafferty   hopper            118 Apr 25  2017 hopper
+< drwxr-xr-x   4 imogulta   student            42 May 10  2006 imogulta
+< drwx------  27 matveeva   student          4096 Mar 19  2007 irina
+< drwxr-xr-x   3 root       root               40 May 29  2013 java
+< drwxr-xr-x   3 danakatz   ucstaff            73 Sep 18  2008 jeffreyc
+< drwxrwxr-x   6 mvzink     jinkies            82 Aug  9  2006 jinkies
+< drwxr-xr-x   5 jinwang    college            73 Dec 23  2010 jinwang_data
+< drwxr-xr-x   9 root       root             4096 May  7  2013 lssg
+< drwxrwsr-x  18 jhr        manticore        4096 Dec 17  2014 manticore
+< drwxrws---   3 acseidel   mesh               24 May 19  2006 mesh
+< drwxrwsr-x  24 jhr        moby             4096 Aug 14  2008 moby
+< drwxrwxr-x   4 adamshaw   mobycfa          4096 May  8  2008 mobycfa
+< drwxr-xr-x   4 root       other              48 Jul 21  2005 museum
+< drwxr-x---   3 bin        other            4096 Jan  7  2005 nethack
+< drwxrwxr-x   6 bowei      nnkp               96 May  8  2006 nnkp
+< drwx------  16 borja      student          4096 Oct 10  2015 pc2
+< drwxr-xr-x   3 root       root               17 Oct  6  2011 phdnotes
+< drwxrwxr-x   9 root       _web_access       123 Feb 27  2017 player
+< drwxr-x---   3 robby      plt                40 Aug 14  2008 plt
+< drwxr-xr-x   4 nick       other              49 Aug 14  2008 rfc
+< drwxrwx---  15 risi       risigroup        4096 Dec  1 16:28 risigroup
+< drwxrwxrwt  14 root       root             4096 Feb  3  2017 scratch
+< drwxrws---  17 stuart     sitoc            4096 Mar  7  2014 sitoc
+< drwxr-xr-x  20 siweiw     student          4096 Jul  7  2010 siweiw
+< drwxrwxr-x   4 dbm        sml                79 Oct 11  2014 sml
+< drwxrws---   5 jhr        smlbasis           76 Aug 14  2008 smlbasis
+< drwxr-xr-x  29 morgan     guest            4096 Jan 20  2013 soundbox
+< lrwxrwxrwx   1 root       root               30 Apr 14  2015 southsidecivic.net -> web_static/southsidecivic.net/
+< drwxr-xr-x  26 root       root             4096 May 21  2013 svn
+< drwxrws---   7 molbakr    swift-coasters    153 Jun  4  2012 swift-coasters
+< drwxr-xr-x  14 rdb        root             4096 Jan 30  2013 techstaff
+< drwxrwsr-x  11 razborov   wwwtheory        4096 Sep 23  2015 theory
+< drwxr-xr-x   3 root       root               25 Nov 14  2012 theorycenter
+< drwxrwsr-x   4 laci       toc                45 Sep 25  2010 toc
+< drwxr-xr-x   2 turnersr   college          4096 Aug 19  2010 turnersr_data
+< drwxr-xr-x   5 root       root              109 Oct 16  2012 ucare
+< drwxr-xr-x   3 root       root               26 Apr 26  2007 vhosts
+< drwxrws---   6 sobhan     vision_grad        97 Apr  4  2011 vision
+< drwxr-xr-x  13 root       other            4096 Dec 29  2014 w3serv
+< drwxr-xr-x  74 root       root             4096 Jun 26 16:32 web_static
+< drwxrwsr-t   2 root       y-lab              32 May  5  2016 y-lab
+---
+> /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1
+> aclocal.m4
+> autogen.sh
+> CHANGES
+> confdb
+> configure
+> configure.ac
+> contrib
+> COPYRIGHT
+> doc
+> examples
+> maint
+> Makefile.am
+> Makefile.in
+> man
+> mpich.def
+> mpich-doxygen.in
+> mpi.def
+> README
+> README.envvar
+> RELEASE_NOTES
+> src
+> subsys_include.m4
+> test
+> www
+> /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1
+> total 4916
+> -rw-r--r--  1 zar1 15400   47362 Feb 20  2014 aclocal.m4
+> -rw-r--r--  1 zar1 15400   28526 Feb 20  2014 autogen.sh
+> -rw-r--r--  1 zar1 15400   63098 Feb 20  2014 CHANGES
+> drwxr-sr-x  2 zar1 15400    4096 Feb 20  2014 confdb
+> -rw-r--r--  1 zar1 15400 1798912 Feb 20  2014 configure
+> -rw-r--r--  1 zar1 15400  231733 Feb 20  2014 configure.ac
+> drwxr-sr-x  3 zar1 15400      42 Feb 20  2014 contrib
+> -rw-r--r--  1 zar1 15400    1439 Feb 20  2014 COPYRIGHT
+> drwxr-sr-x 10 zar1 15400    4096 Feb 20  2014 doc
+> drwxr-sr-x  6 zar1 15400    4096 Feb 20  2014 examples
+> drwxr-sr-x  4 zar1 15400    4096 Feb 20  2014 maint
+> -rw-r--r--  1 zar1 15400   17088 Feb 20  2014 Makefile.am
+> -rw-r--r--  1 zar1 15400 2638605 Feb 20  2014 Makefile.in
+> drwxr-sr-x  4 zar1 15400      40 Feb 20  2014 man
+> -rw-r--r--  1 zar1 15400   21620 Feb 20  2014 mpich.def
+> -rw-r--r--  1 zar1 15400   51981 Feb 20  2014 mpich-doxygen.in
+> -rw-r--r--  1 zar1 15400   15827 Feb 20  2014 mpi.def
+> -rw-r--r--  1 zar1 15400   33162 Feb 20  2014 README
+> -rw-r--r--  1 zar1 15400   21919 Feb 20  2014 README.envvar
+> -rw-r--r--  1 zar1 15400    2346 Feb 20  2014 RELEASE_NOTES
+> drwxr-sr-x 18 zar1 15400    4096 Feb 20  2014 src
+> -rw-r--r--  1 zar1 15400    2452 Feb 20  2014 subsys_include.m4
+> drwxr-sr-x  9 zar1 15400    4096 Feb 20  2014 test
+> drwxr-sr-x  4 zar1 15400      40 Feb 20  2014 www
+1735a526,578
+> aclocal.m4
+> autogen.sh
+> CHANGES
+> confdb
+> configure
+> configure.ac
+> contrib
+> COPYRIGHT
+> doc
+> examples
+> maint
+> Makefile.am
+> Makefile.in
+> man
+> mpich.def
+> mpich-doxygen.in
+> mpi.def
+> README
+> README.envvar
+> RELEASE_NOTES
+> src
+> subsys_include.m4
+> test
+> www
+> cd /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/; cd /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1/afolderdoesnotexist;  ls ; pwd argv3; pwd
+> An error has occurred
+> aclocal.m4
+> autogen.sh
+> CHANGES
+> confdb
+> configure
+> configure.ac
+> contrib
+> COPYRIGHT
+> doc
+> examples
+> maint
+> Makefile.am
+> Makefile.in
+> man
+> mpich.def
+> mpich-doxygen.in
+> mpi.def
+> README
+> README.envvar
+> RELEASE_NOTES
+> src
+> subsys_include.m4
+> test
+> www
+> An error has occurred
+> /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1
+> exit
+
+
+Diffing multipleCommand.stderr
+multipleCommand     0	9
+----------------------------------
+Running batch file: complexRedirection_format
+Diffing complexRedirection_format.stdout
+
+
+Diffing complexRedirection_format.stderr
+1,7d0
+< ls: write error: Bad file descriptor
+< ls: write error: Bad file descriptor
+< ls: write error: Bad file descriptor
+< ls: write error: Bad file descriptor
+< ls: write error: Bad file descriptor
+< ls: write error: Bad file descriptor
+< ls: write error: Bad file descriptor
+
+
+Diffing complexRedirection_format_rd_1
+Diffing complexRedirection_format_rd_2
+Diffing complexRedirection_format_rd_3
+Diffing complexRedirection_format_rd_4
+Diffing complexRedirection_format_rd_5
+Diffing complexRedirection_format_rd_6
+Diffing complexRedirection_format_rd_7
+Diffing complexRedirection_format_rd_8
+complexRedirection_format0	6
+----------------------------------
+Running batch file: advancedRedirection_format
+Diffing advancedRedirection_format.stdout
+2,51d1
+< An error has occurred
+< aclocal.m4
+< autogen.sh
+< CHANGES
+< confdb
+< configure
+< configure.ac
+< contrib
+< COPYRIGHT
+< doc
+< examples
+< maint
+< Makefile.am
+< Makefile.in
+< man
+< mpich.def
+< mpich-doxygen.in
+< mpi.def
+< README
+< README.envvar
+< RELEASE_NOTES
+< src
+< subsys_include.m4
+< test
+< www
+< An error has occurred
+< aclocal.m4
+< autogen.sh
+< CHANGES
+< confdb
+< configure
+< configure.ac
+< contrib
+< COPYRIGHT
+< doc
+< examples
+< maint
+< Makefile.am
+< Makefile.in
+< man
+< mpich.def
+< mpich-doxygen.in
+< mpi.def
+< README
+< README.envvar
+< RELEASE_NOTES
+< src
+< subsys_include.m4
+< test
+< www
+53,77d2
+< An error has occurred
+< aclocal.m4
+< autogen.sh
+< CHANGES
+< confdb
+< configure
+< configure.ac
+< contrib
+< COPYRIGHT
+< doc
+< examples
+< maint
+< Makefile.am
+< Makefile.in
+< man
+< mpich.def
+< mpich-doxygen.in
+< mpi.def
+< README
+< README.envvar
+< RELEASE_NOTES
+< src
+< subsys_include.m4
+< test
+< www
+79,103d3
+< An error has occurred
+< aclocal.m4
+< autogen.sh
+< CHANGES
+< confdb
+< configure
+< configure.ac
+< contrib
+< COPYRIGHT
+< doc
+< examples
+< maint
+< Makefile.am
+< Makefile.in
+< man
+< mpich.def
+< mpich-doxygen.in
+< mpi.def
+< README
+< README.envvar
+< RELEASE_NOTES
+< src
+< subsys_include.m4
+< test
+< www
+105,129d4
+< An error has occurred
+< aclocal.m4
+< autogen.sh
+< CHANGES
+< confdb
+< configure
+< configure.ac
+< contrib
+< COPYRIGHT
+< doc
+< examples
+< maint
+< Makefile.am
+< Makefile.in
+< man
+< mpich.def
+< mpich-doxygen.in
+< mpi.def
+< README
+< README.envvar
+< RELEASE_NOTES
+< src
+< subsys_include.m4
+< test
+< www
+131,155d5
+< An error has occurred
+< aclocal.m4
+< autogen.sh
+< CHANGES
+< confdb
+< configure
+< configure.ac
+< contrib
+< COPYRIGHT
+< doc
+< examples
+< maint
+< Makefile.am
+< Makefile.in
+< man
+< mpich.def
+< mpich-doxygen.in
+< mpi.def
+< README
+< README.envvar
+< RELEASE_NOTES
+< src
+< subsys_include.m4
+< test
+< www
+157,181d6
+< An error has occurred
+< aclocal.m4
+< autogen.sh
+< CHANGES
+< confdb
+< configure
+< configure.ac
+< contrib
+< COPYRIGHT
+< doc
+< examples
+< maint
+< Makefile.am
+< Makefile.in
+< man
+< mpich.def
+< mpich-doxygen.in
+< mpi.def
+< README
+< README.envvar
+< RELEASE_NOTES
+< src
+< subsys_include.m4
+< test
+< www
+
+
+Diffing advancedRedirection_format.stderr
+Diffing advancedRedirection_format_rd_1
+Diffing advancedRedirection_format_rd_2
+Diffing advancedRedirection_format_rd_3
+Diffing advancedRedirection_format_rd_4
+Diffing advancedRedirection_format_rd_5
+Diffing advancedRedirection_format_rd_6
+Diffing advancedRedirection_format_rd_7
+Diffing advancedRedirection_format_rd_8
+advancedRedirection_format0	6
+----------------------------------
+Running batch file: complexRedirection_illegal
+Diffing complexRedirection_illegal.stdout
+2a3
+> An error has occurred
+5,28d5
+< aclocal.m4
+< autogen.sh
+< CHANGES
+< confdb
+< configure
+< configure.ac
+< contrib
+< COPYRIGHT
+< doc
+< examples
+< maint
+< Makefile.am
+< Makefile.in
+< man
+< mpich.def
+< mpich-doxygen.in
+< mpi.def
+< README
+< README.envvar
+< RELEASE_NOTES
+< src
+< subsys_include.m4
+< test
+< www
+29a7
+> An error has occurred
+30a9
+> An error has occurred
+31a11
+> An error has occurred
+33,34d12
+< ls /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1 > > complexRedirection_illegal_rd_11
+< ls /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1 > complexRedirection_illegal_rd_12 >
+35a14
+> ls /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1 > > complexRedirection_illegal_rd_11
+36a16
+> ls /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1 > complexRedirection_illegal_rd_12 >
+38,61d17
+< aclocal.m4
+< autogen.sh
+< CHANGES
+< confdb
+< configure
+< configure.ac
+< contrib
+< COPYRIGHT
+< doc
+< examples
+< maint
+< Makefile.am
+< Makefile.in
+< man
+< mpich.def
+< mpich-doxygen.in
+< mpi.def
+< README
+< README.envvar
+< RELEASE_NOTES
+< src
+< subsys_include.m4
+< test
+< www
+64,90d19
+< An error has occurred
+< An error has occurred
+< /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1:
+< aclocal.m4
+< autogen.sh
+< CHANGES
+< confdb
+< configure
+< configure.ac
+< contrib
+< COPYRIGHT
+< doc
+< examples
+< maint
+< Makefile.am
+< Makefile.in
+< man
+< mpich.def
+< mpich-doxygen.in
+< mpi.def
+< README
+< README.envvar
+< RELEASE_NOTES
+< src
+< subsys_include.m4
+< test
+< www
+
+
+Diffing complexRedirection_illegal.stderr
+Diffing complexRedirection_illegal_rd_9
+complexRedirection_illegal0	6
+----------------------------------
+Running batch file: advancedRedirection_illegal
+Diffing advancedRedirection_illegal.stdout
+2,26d1
+< An error has occurred
+< aclocal.m4
+< autogen.sh
+< CHANGES
+< confdb
+< configure
+< configure.ac
+< contrib
+< COPYRIGHT
+< doc
+< examples
+< maint
+< Makefile.am
+< Makefile.in
+< man
+< mpich.def
+< mpich-doxygen.in
+< mpi.def
+< README
+< README.envvar
+< RELEASE_NOTES
+< src
+< subsys_include.m4
+< test
+< www
+28,52d2
+< An error has occurred
+< aclocal.m4
+< autogen.sh
+< CHANGES
+< confdb
+< configure
+< configure.ac
+< contrib
+< COPYRIGHT
+< doc
+< examples
+< maint
+< Makefile.am
+< Makefile.in
+< man
+< mpich.def
+< mpich-doxygen.in
+< mpi.def
+< README
+< README.envvar
+< RELEASE_NOTES
+< src
+< subsys_include.m4
+< test
+< www
+55,78d4
+< aclocal.m4
+< autogen.sh
+< CHANGES
+< confdb
+< configure
+< configure.ac
+< contrib
+< COPYRIGHT
+< doc
+< examples
+< maint
+< Makefile.am
+< Makefile.in
+< man
+< mpich.def
+< mpich-doxygen.in
+< mpi.def
+< README
+< README.envvar
+< RELEASE_NOTES
+< src
+< subsys_include.m4
+< test
+< www
+79a6
+> An error has occurred
+80a8
+> An error has occurred
+81a10
+> An error has occurred
+83d11
+< ls /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1 >+ >+ advancedRedirection_illegal_rd_11
+85c13
+< lAn error has occurred
+---
+> ls /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1 >+ >+ advancedRedirection_illegal_rd_11
+89,113d16
+< An error has occurred
+< aclocal.m4
+< autogen.sh
+< CHANGES
+< confdb
+< configure
+< configure.ac
+< contrib
+< COPYRIGHT
+< doc
+< examples
+< maint
+< Makefile.am
+< Makefile.in
+< man
+< mpich.def
+< mpich-doxygen.in
+< mpi.def
+< README
+< README.envvar
+< RELEASE_NOTES
+< src
+< subsys_include.m4
+< test
+< www
+116,141d18
+< An error has occurred
+< /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1:
+< aclocal.m4
+< autogen.sh
+< CHANGES
+< confdb
+< configure
+< configure.ac
+< contrib
+< COPYRIGHT
+< doc
+< examples
+< maint
+< Makefile.am
+< Makefile.in
+< man
+< mpich.def
+< mpich-doxygen.in
+< mpi.def
+< README
+< README.envvar
+< RELEASE_NOTES
+< src
+< subsys_include.m4
+< test
+< www
+
+
+Diffing advancedRedirection_illegal.stderr
+Diffing advancedRedirection_illegal_rd_9
+advancedRedirection_illegal0	6
+----------------------------------
+Running batch file: advancedRedirection_concat
+Diffing advancedRedirection_concat.stdout
+2,55d1
+< An error has occurred
+< checkbuilds
+< checkbuilds.in
+< checkmake
+< check_todo_tickets.sh
+< clmake
+< clmake.in
+< configure
+< configure.ac
+< createcoverage
+< createcoverage.in
+< cvardirs
+< decode_handle
+< docnotes
+< errmsgdirs
+< extractcvars
+< extracterrmsgs
+< extractfixme
+< extractfixme.in
+< extractstates
+< extractstates.in
+< extractstrings
+< extractstrings.in
+< f77tof90
+< f77tof90.in
+< fcrosscompile
+< findunusederrtxt
+< gccimpgen.cpp
+< gcovmerge
+< gcovmerge.in
+< genstates
+< genstates.in
+< gen_subcfg_m4
+< getcoverage
+< getcoverage.in
+< libtool.m4.patch
+< local_perl
+< makedefs
+< Makefile.mk
+< mpi1.lst
+< parse.sub
+< parsetest
+< pipestatus
+< release.pl
+< samplebuilds
+< sampleconf.in
+< setup.jpg
+< structalign.c
+< template.c
+< testbuild
+< testpmpi
+< Version
+< Version.base.m4
+< version.m4
+57,81d2
+< An error has occurred
+< aclocal.m4
+< autogen.sh
+< CHANGES
+< confdb
+< configure
+< configure.ac
+< contrib
+< COPYRIGHT
+< doc
+< examples
+< maint
+< Makefile.am
+< Makefile.in
+< man
+< mpich.def
+< mpich-doxygen.in
+< mpi.def
+< README
+< README.envvar
+< RELEASE_NOTES
+< src
+< subsys_include.m4
+< test
+< www
+
+
+Diffing advancedRedirection_concat.stderr
+Diffing advancedRedirection_concat_rd_14
+advancedRedirection_concat0	6
+----------------------------------
+Running batch file: emptyInput
+Diffing emptyInput.stdout
+
+
+Diffing emptyInput.stderr
+1d0
+< Segmentation fault
+
+
+emptyInput          0	1
+----------------------------------
+Running batch file: 1KCommand
+Diffing 1KCommand.stdout
+2,4c2,3
+< echo 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000echo 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000An error has occurred
+< 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+< 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000An error has occurred
+---
+> echo 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+> An error has occurred
+6c5
+< /stage
+---
+> /stage/classes/archive/2014/spring/15400/p4shell/mpich-3.1
+8d6
+< 
+
+
+Diffing 1KCommand.stderr
+1KCommand           0	3
+Timed out
+two arguments       0	2
+does not exist      0	2
+total               0	100
+
+Final Grade: 0

@@ -1,0 +1,21 @@
+Only two functions seem to work for me:
+
+gooduser_basic
+gooduser_args
+
+I didn't have enough time to test the rest:
+
+gooduser_rd
+gooduser_multipleCommand
+buildin_wrongFormat
+cd_toFolderNotExist
+badCommand
+complexCommand
+multipleCommand
+complexRedirection_format
+advancedRedirection_format
+complexRedirection_illegal
+advancedRedirection_illegal
+advancedRedirection_concat
+emptyInput
+1KCommand

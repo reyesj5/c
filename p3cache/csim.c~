@@ -1,0 +1,18 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <strings.h>
+#include "cachelab.h"
+
+typedef unsigned long long int address;
+
+typedef struct {
+    int setBits;
+    int lines;
+    int 
+
+int main()
+{
+    int *hits, *miss, *evics;
+    printSummary(*hits, *miss, *evics);
+    return 0;
+}
